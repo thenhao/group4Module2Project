@@ -1,4 +1,4 @@
-
+import API from './api/api';
 
 function App() {
   return (
