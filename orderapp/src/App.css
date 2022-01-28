@@ -16,15 +16,6 @@
     width:70%;
 }
 
-.server{
-    border-top:1px solid black;
-    border-bottom:1px solid black;
-    border-right:1px solid black;
-    height: 50px;
-    width:29.5%;
-    margin-top: 5px;
-}
-
 .maincontainer{
     display: flex;
     flex-direction: row;
