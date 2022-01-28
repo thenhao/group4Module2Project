@@ -2,6 +2,7 @@ import API from './api/api';
 import React, {useState, useEffect} from 'react';
 import Footer from './parts/footer';
 import Header from './parts/header';
+import Payment from './parts/payment';
 import './App.css';
 
 function App() {
@@ -29,7 +30,9 @@ function App() {
 
           <div className='navbarcontainer'>
               <div className='navbar'>Navbar</div>
-              <div className='server'>Call Server</div>
+              <div className='payment'>
+              <Payment />
+              </div>
           </div>
           
           <div className='maincontainer'>

@@ -16,13 +16,19 @@
     width:70%;
 }
 
-.server{
-    border-top:1px solid black;
-    border-bottom:1px solid black;
-    border-right:1px solid black;
-    height: 50px;
-    width:29.5%;
-    margin-top: 5px;
+.payment {
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    right: 10px;
+}
+
+.payment img {
+    padding: 5px;
+}
+
+.payment img:hover {
+    cursor: pointer;
 }
 
 .maincontainer{
