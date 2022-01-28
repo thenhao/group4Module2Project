@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import Footer from './parts/footer';
 import Header from './parts/header';
 import './App.css';
+import Menuitemcomponent from './components/Menuitemcomponent.js';
 
 function App() {
   const [menu, setMenu] = useState([]);
@@ -21,11 +22,14 @@ function App() {
     getMenuAPI();
   },[]);
 
+  // const [revisedMenu, setRevisedMenu] = useState([]);
+
   return (
     <div>
+      {/* <Menuitemcomponent data={menu[0]}/> */}
         {/* <Header className='header'/> */}
 
-          <div className='header'>Header</div>
+          {/* <div className='header'>Header</div>
 
           <div className='navbarcontainer'>
               <div className='navbar'>Navbar</div>
@@ -46,7 +50,7 @@ function App() {
           </div>
           
           
-          <div className='header'>Footer</div>
+          <div className='header'>Footer</div> */}
         {/* <Footer className='footer'/> */}
     </div>
   );
