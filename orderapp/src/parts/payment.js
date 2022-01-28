@@ -1,3 +1,5 @@
+import './payment.css';
+
 export default function Payment() {
     const handlePayment = () => {
         console.log("Payment button clicked!")
