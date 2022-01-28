@@ -1,9 +1,26 @@
 import API from './api/api';
+import React, {useState, useEffect} from 'react';
 import Footer from './parts/footer';
 import Header from './parts/header';
 import './App.css';
 
 function App() {
+  const [menu, setMenu] = useState([]);
+  
+    const getMenuAPI = async () => {
+    const {status, data} = await API.get("/menu");
+      console.log("Status", status);
+      console.log("Data", data)
+    if (status === 200) {
+        setMenu(data)
+    }
+  }
+
+  useEffect(() => {
+    console.log("useEffect");
+    getMenuAPI();
+  },[]);
+
   return (
     <div>
         {/* <Header className='header'/> */}
