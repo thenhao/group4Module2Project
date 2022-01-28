@@ -16,6 +16,21 @@
     width:70%;
 }
 
+.server {
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    right: 80px;
+}
+
+.server img {
+    padding: 5px;
+}
+
+.server img:hover {
+    cursor: pointer;
+}
+
 .payment {
     height: 60px;
     width: 50px;
