@@ -16,9 +16,13 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 
 ## Contributors
 [Long Tian Hao](https://github.com/thenhao)
+
 [Sarah Khoo](https://github.com/Sarah-Specialist)
+
 [Regina Yun](https://github.com/regina-yun)
+
 [Jeffrey Tan](https://github.com/Jeffreytanhk)
+
 [Shaun Boey](https://github.com/shaunboey)
 
 ## Built with
