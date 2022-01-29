@@ -1,8 +1,25 @@
 import API from './api/api.js';
 import React, {useState, useEffect} from 'react';
-// import Footer from './parts/footer.js';
-// import Header from './parts/header.js';
+
+
+
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import Home from './pages/home/home';
+import Appetizer from './pages/appetizer/appetizer';
+import Main from './pages/main/main';
+import Beverage from './pages/beverage/beverage';
+import Dessert from './pages/dessert/dessert';
+import Footer from './parts/footer';
+import Header from './parts/header';
+import Payment from './parts/payment';
+import Server from './parts/server';
+
+import CartItems from './components/CartItems';
+import OrderlistSendBtn from './components/OrderlistSendBtn';
+import './components/OrderlistSendBtn.css';
+
 import MenuitemContainer from './components/MenuitemContainer.js';
+
 import './App.css';
 
 
@@ -52,39 +69,44 @@ function App() {
   
   return (
     <>
-      <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
-         
-
       
-  
-      
-      {/* <img src={imageaddress} id="imagetest"/> */}
-      {/* <Menuitemcomponent info={menu[0]}/> */}
-
-        {/* <Header className='header'/> */}
-
-          {/* <div className='header'>Header</div>
+          <div className='header'>Header</div>
 
           <div className='navbarcontainer'>
-              <div className='navbar'>Navbar</div>
-              <div className='server'>Call Server</div>
-          </div>
-          
-          <div className='maincontainer'>
-            <div className='menuitemcontainer'>MenuitemContainer
-                <div className='menu'>
-                    MenuItems
-                </div>
-            </div>
+            <Router>
+              <div className="navbar">
+                <Link to="/pages/home/home"><button className="pages">Home</button></Link>
+                <Link to="/pages/appetizer/appetizer"><button className="pages">Appetizer</button></Link>
+                <Link to="/pages/main/main"><button className="pages">Main</button></Link>
+                <Link to="/pages/beverage/beverage"><button className="pages">Beverage</button></Link>
+                <Link to="/pages/dessert/dessert"><button className="pages">Dessert</button></Link>
+              <span className='server'><Server /></span>
+              <span className='payment'><Payment /></span>
+              </div>
+              <div className='menuitemcontainer'>
+                <Switch>
+                  <Route path="/pages/home/home"><Home /></Route>
+                  <Route path="/pages/appetizer/appetizer"><Appetizer /></Route>
+                  <Route path="/pages/main/main"><Main /></Route>
+                  <Route path="/pages/beverage/beverage"><Beverage /></Route>
+                  <Route path="/pages/dessert/dessert"><Dessert /></Route>
+                </Switch>
+                <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
+              </div>
+            </Router>
             <div className='orderlistcontainer'>OrderListContainer
                 <div className='order'>
                     OrderList
+
+                  <CartItems/>                
+                  <OrderlistSendBtn />
+
                 </div>
             </div>
           </div>
           
           
-          <div className='header'>Footer</div> */}
+          <div className='header'>Footer</div> 
         {/* <Footer className='footer'/> */}
     </>
   )

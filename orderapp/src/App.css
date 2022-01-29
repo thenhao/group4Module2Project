@@ -15,18 +15,20 @@
 }
 
 .navbar{
-    border:1px solid black;
     height: 60px;
-    width:70%;
+    width:80%;
 }
 
-.server{
-    border-top:1px solid black;
-    border-bottom:1px solid black;
-    border-right:1px solid black;
-    height: 50px;
-    width:29.5%;
-    margin-top: 5px;
+.pages {
+    border: none;
+    background-color: white;
+    padding: 20px 40px;
+    font-size: 16px;
+}
+
+.pages:hover {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .maincontainer {
