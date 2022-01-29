@@ -4,7 +4,9 @@ import Footer from './parts/footer';
 import Header from './parts/header';
 import Payment from './parts/payment';
 import Server from './parts/server';
+import CartItems from './components/CartItems';
 import './App.css';
+
 
 function App() {
   const [menu, setMenu] = useState([]);
@@ -44,6 +46,7 @@ function App() {
             <div className='orderlistcontainer'>OrderListContainer
                 <div className='order'>
                     OrderList
+                    <CartItems/>
                 </div>
             </div>
           </div>
