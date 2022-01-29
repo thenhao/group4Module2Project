@@ -32,7 +32,9 @@ function App() {
           <div className='header'>Header</div>
 
           <div className='navbarcontainer'>
-              <div className='navbar'>Navbar</div>
+              <div className='navbar'>
+                
+              </div>
               <div className='server'><Server /></div>
               <div className='payment'><Payment /></div>
           </div>
