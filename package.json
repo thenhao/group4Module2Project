@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "axios": "^0.25.0",
-    "missing": "^0.0.1"
-  }
-}
