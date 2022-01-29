@@ -10,11 +10,12 @@ function AddToCartItems() {
   }
 
   const [item, setItem] = useState(defaultItem); // details to be taken from Tianhao
-  const [selectedItemList, setSelectedItemList] = useState([]); // to be printed on the order list
-  // const [itemQuantity, setItemQuantity] = useState(item.quantity);
+  const [selectedItemList, setSelectedItemList] = useState([]); // to be printed as default on the order list
+
 
   let newSelectedItemList = [...selectedItemList, item];
   setSelectedItemList(newSelectedItemList);
 }
 
 export default AddToCartItems;
+
