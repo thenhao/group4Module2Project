@@ -36,7 +36,6 @@ function App() {
         {/* <Header className='header'/> */}
 
           <div className='header'>Header</div>
-
           <div className='navbarcontainer'>
             <Router>
               <div className="navbar">
@@ -45,8 +44,10 @@ function App() {
                 <Link to="/pages/main/main"><button className="pages">Main</button></Link>
                 <Link to="/pages/beverage/beverage"><button className="pages">Beverage</button></Link>
                 <Link to="/pages/dessert/dessert"><button className="pages">Dessert</button></Link>
+              <div className='server'><Server /></div>
+              <div className='payment'><Payment /></div>
               </div>
-              <div className="main">
+              <div className='menuitemcontainer'>
                 <Switch>
                   <Route path="/pages/home/home"><Home /></Route>
                   <Route path="/pages/appetizer/appetizer"><Appetizer /></Route>
@@ -55,17 +56,7 @@ function App() {
                   <Route path="/pages/dessert/dessert"><Dessert /></Route>
                 </Switch>
               </div>
-              </Router>
-              <div className='server'><Server /></div>
-              <div className='payment'><Payment /></div>
-          </div>
-          
-          <div className='maincontainer'>
-            <div className='menuitemcontainer'>
-                <div className='menu'>
-                    MenuItems
-                </div>
-            </div>
+            </Router>
             <div className='orderlistcontainer'>OrderListContainer
                 <div className='order'>
                     OrderList
