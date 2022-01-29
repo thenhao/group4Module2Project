@@ -11,9 +11,20 @@
 }
 
 .navbar{
-    border:1px solid black;
     height: 60px;
-    width:70%;
+    width:80%;
+}
+
+.pages {
+    border: none;
+    background-color: white;
+    padding: 20px 40px;
+    font-size: 16px;
+}
+
+.pages:hover {
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .maincontainer{
