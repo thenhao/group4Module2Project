@@ -1,3 +1,7 @@
+/* #image{
+    width:200px;
+} */
+
 .header{
     border:1px solid black;
     height: 120px;
@@ -27,7 +31,13 @@
     font-weight: bold;
 }
 
-.maincontainer{
+.maincontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.trialcontainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -1,5 +1,8 @@
-import API from './api/api';
+import API from './api/api.js';
 import React, {useState, useEffect} from 'react';
+
+
+
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Home from './pages/home/home';
 import Appetizer from './pages/appetizer/appetizer';
@@ -14,6 +17,8 @@ import Server from './parts/server';
 import CartItems from './components/CartItems';
 import OrderlistSendBtn from './components/OrderlistSendBtn';
 import './components/OrderlistSendBtn.css';
+
+import MenuitemContainer from './components/MenuitemContainer.js';
 
 import './App.css';
 
@@ -35,11 +40,38 @@ function App() {
     getMenuAPI();
   },[]);
 
-  return (
-    <div>
-        {/* <Header className='header'/> */}
+  //default state for pass item to orderlist
+  const defaultState = {
+    name:"",
+    price:0,
+    quantity:0
+  };
 
+  //state for storing the item to be passed to orderlist
+  const [additem, setAddItem] = useState(defaultState);
+
+  //function to pass the item to the cart
+  function AddItemToCart(itemobject){
+    const toCartObject = {...itemobject};
+    setAddItem(toCartObject);
+    //console.log("additem is", additem);
+  }
+
+  //funtion to clear the additem so that it can be ready for the next item to pass
+  function ClearAddItem() {
+    setAddItem(defaultState);
+    console.log("item has been added to cart");
+  }
+
+  useEffect(() => {
+    console.log("additem is", additem);
+  },[additem]);
+  
+  return (
+    <>
+      
           <div className='header'>Header</div>
+
           <div className='navbarcontainer'>
             <Router>
               <div className="navbar">
@@ -59,6 +91,7 @@ function App() {
                   <Route path="/pages/beverage/beverage"><Beverage /></Route>
                   <Route path="/pages/dessert/dessert"><Dessert /></Route>
                 </Switch>
+                <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
               </div>
             </Router>
             <div className='orderlistcontainer'>OrderListContainer
@@ -73,10 +106,10 @@ function App() {
           </div>
           
           
-          <div className='header'>Footer</div>
+          <div className='header'>Footer</div> 
         {/* <Footer className='footer'/> */}
-    </div>
-  );
+    </>
+  )
 }
 
 export default App;
