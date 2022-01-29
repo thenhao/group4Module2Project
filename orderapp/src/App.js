@@ -1,9 +1,10 @@
-import API from './api/api';
+import API from './api/api.js';
 import React, {useState, useEffect} from 'react';
-import Footer from './parts/footer';
-import Header from './parts/header';
+// import Footer from './parts/footer.js';
+// import Header from './parts/header.js';
+import MenuitemContainer from './components/MenuitemContainer.js';
 import './App.css';
-import Menuitemcomponent from './components/Menuitemcomponent.js';
+
 
 function App() {
   const [menu, setMenu] = useState([]);
@@ -22,11 +23,44 @@ function App() {
     getMenuAPI();
   },[]);
 
-  // const [revisedMenu, setRevisedMenu] = useState([]);
+  //default state for pass item to orderlist
+  const defaultState = {
+    name:"",
+    price:0,
+    quantity:0
+  };
 
+  //state for storing the item to be passed to orderlist
+  const [additem, setAddItem] = useState(defaultState);
+
+  //function to pass the item to the cart
+  function AddItemToCart(itemobject){
+    const toCartObject = {...itemobject};
+    setAddItem(toCartObject);
+    //console.log("additem is", additem);
+  }
+
+  //funtion to clear the additem so that it can be ready for the next item to pass
+  function ClearAddItem() {
+    setAddItem(defaultState);
+    console.log("item has been added to cart");
+  }
+
+  useEffect(() => {
+    console.log("additem is", additem);
+  },[additem]);
+  
   return (
-    <div>
-      {/* <Menuitemcomponent data={menu[0]}/> */}
+    <>
+      <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
+         
+
+      
+  
+      
+      {/* <img src={imageaddress} id="imagetest"/> */}
+      {/* <Menuitemcomponent info={menu[0]}/> */}
+
         {/* <Header className='header'/> */}
 
           {/* <div className='header'>Header</div>
@@ -52,8 +86,8 @@ function App() {
           
           <div className='header'>Footer</div> */}
         {/* <Footer className='footer'/> */}
-    </div>
-  );
+    </>
+  )
 }
 
 export default App;

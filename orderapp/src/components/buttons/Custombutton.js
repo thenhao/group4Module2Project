@@ -1,7 +1,8 @@
 function Custombutton(props){
+
     return(
         <>
-            <button>{props.sign}</button>
+            <button onClick={props.click}>{props.sign}</button>
         </>
     )
 }
