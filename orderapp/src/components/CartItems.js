@@ -1,7 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
-function CartItems() {
-  const [selectedItemList, setSelectedItemList] = useState([{name: 'Coke', quantity: 2, price: '$2.90'}]) 
+function CartItems(props) {
+
+  let selectedItemList = props.selectedItemList;
+  let setSelectedItemList = props.setSelectedItemList;
 
   function handleChangeQuantity(itemName, symbol) {
 

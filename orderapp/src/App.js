@@ -16,11 +16,12 @@ import Server from './parts/server';
 
 import CartItems from './components/CartItems';
 import OrderlistSendBtn from './components/OrderlistSendBtn';
-import './components/OrderlistSendBtn.css';
-
+import AddedItem from './components/OrderlistContainer.js';
 import MenuitemContainer from './components/MenuitemContainer.js';
 
 import './App.css';
+import './components/OrderlistSendBtn.css';
+
 
 
 function App() {
@@ -50,10 +51,14 @@ function App() {
   //state for storing the item to be passed to orderlist
   const [additem, setAddItem] = useState(defaultState);
 
+  // to be printed as default on the order list
+  const [selectedItemList, setSelectedItemList] = useState([]); 
+
   //function to pass the item to the cart
   function AddItemToCart(itemobject){
     const toCartObject = {...itemobject};
     setAddItem(toCartObject);
+    AddedItem(toCartObject, selectedItemList, setSelectedItemList); // function call to pass the obj to OrderlistContainer
     //console.log("additem is", additem);
   }
 
@@ -98,7 +103,7 @@ function App() {
                 <div className='order'>
                     OrderList
 
-                  <CartItems/>                
+                  <CartItems selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
                   <OrderlistSendBtn />
 
                 </div>

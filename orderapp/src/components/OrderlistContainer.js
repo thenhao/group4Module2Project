@@ -1,21 +1,23 @@
-import React, {useState} from 'react';
+function AddedItem(item, selectedItemList, setSelectedItemList) {
+  let newSelectedItemList = [...selectedItemList];
+  
+  let result = newSelectedItemList.find(obj => {
+    if(obj.name === item.name) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  });
 
-function AddToCartItems() {
-
-  //testing default variables
-  let defaultItem = {
-    name: 'Coke',
-    quantity: 2,
-    price: '$2.90'
+  if(result === undefined) {
+    newSelectedItemList.push(item);
   }
-
-  const [item, setItem] = useState(defaultItem); // details to be taken from Tianhao
-  const [selectedItemList, setSelectedItemList] = useState([]); // to be printed as default on the order list
-
-
-  let newSelectedItemList = [...selectedItemList, item];
+  else {
+    result.quantity = item.quantity;
+  }
   setSelectedItemList(newSelectedItemList);
 }
 
-export default AddToCartItems;
+export default AddedItem;
 
