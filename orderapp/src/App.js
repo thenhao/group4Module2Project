@@ -75,7 +75,7 @@ function App() {
           <div className='navbarcontainer'>
             <Router>
               <div className="navbar">
-                <Link to="/pages/home/home"><button className="pages">Home</button></Link>
+                <Link to="/"><button className="pages">Home</button></Link>
                 <Link to="/pages/appetizer/appetizer"><button className="pages">Appetizer</button></Link>
                 <Link to="/pages/main/main"><button className="pages">Main</button></Link>
                 <Link to="/pages/beverage/beverage"><button className="pages">Beverage</button></Link>
@@ -85,7 +85,7 @@ function App() {
               </div>
               <div className='menuitemcontainer'>
                 <Switch>
-                  <Route path="/pages/home/home"><Home /></Route>
+                  <Route exact path="/"><Home /></Route>
                   <Route path="/pages/appetizer/appetizer"><Appetizer /></Route>
                   <Route path="/pages/main/main"><Main /></Route>
                   <Route path="/pages/beverage/beverage"><Beverage /></Route>
