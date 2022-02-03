@@ -49,7 +49,7 @@ function CartItems(props) {
               <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '-')}>-</button>
               <input className="quantityDisplay" type='text' inputMode='numeric' value={obj.quantity}/>
               <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '+')}>+</button>,
-              Price:{obj.price}</p>
+              Price:{(obj.price*obj.quantity).toFixed(2)}</p>
             </>
           );
         })}
