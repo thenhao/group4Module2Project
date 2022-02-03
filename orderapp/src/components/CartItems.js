@@ -1,4 +1,5 @@
 import React from 'react';
+import './CartItems.css';
 
 function CartItems(props) {
 
@@ -42,17 +43,26 @@ function CartItems(props) {
 
   return(
     <div>
-        {selectedItemList.map(obj => {
-          return(
-            <>
-              <p>{obj.name},
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+      {selectedItemList.map(obj => {
+        return(
+          <tr>
+            <td>{obj.name}</td>
+            <td>
               <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '-')}>-</button>
               <input className="quantityDisplay" type='text' inputMode='numeric' value={obj.quantity}/>
-              <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '+')}>+</button>,
-              Price:{(obj.price*obj.quantity).toFixed(2)}</p>
-            </>
-          );
-        })}
+              <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '+')}>+</button>
+            </td>
+            <td>
+              {(obj.price*obj.quantity).toFixed(2)}
+            </td>
+          </tr>
+        );
+      })}
     </div>
   )
 }

@@ -1,8 +1,6 @@
 import API from './api/api.js';
 import React, {useState, useEffect} from 'react';
 
-
-
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Home from './pages/home/home';
 import Appetizer from './pages/appetizer/appetizer';
@@ -75,44 +73,43 @@ function App() {
   return (
     <>
       
-          <div className='header'>Header</div>
+      <div className="header">
+        <Header/>
+      </div>
 
-          <div className='navbarcontainer'>
-            <Router>
-              <div className="navbar">
-                <Link to="/"><button className="pages">Home</button></Link>
-                <Link to="/pages/appetizer/appetizer"><button className="pages">Appetizer</button></Link>
-                <Link to="/pages/main/main"><button className="pages">Main</button></Link>
-                <Link to="/pages/beverage/beverage"><button className="pages">Beverage</button></Link>
-                <Link to="/pages/dessert/dessert"><button className="pages">Dessert</button></Link>
-              <span className='server'><Server /></span>
-              <span className='payment'><Payment /></span>
-              </div>
-              <div className='menuitemcontainer'>
-                <Switch>
-                  <Route exact path="/"><Home /></Route>
-                  <Route path="/pages/appetizer/appetizer"><Appetizer /></Route>
-                  <Route path="/pages/main/main"><Main /></Route>
-                  <Route path="/pages/beverage/beverage"><Beverage /></Route>
-                  <Route path="/pages/dessert/dessert"><Dessert /></Route>
-                </Switch>
-                <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
-              </div>
-            </Router>
-            <div className='orderlistcontainer'>OrderListContainer
-                <div className='order'>
-                    OrderList
-
-                  <CartItems selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
-                  <OrderlistSendBtn />
-
-                </div>
-            </div>
+      <div className='navbarcontainer'>
+        <Router>
+          <div className="navbar">
+            <Link to="/"><button className="pages">Home</button></Link>
+            <Link to="/pages/appetizer/appetizer"><button className="pages">Appetizer</button></Link>
+            <Link to="/pages/main/main"><button className="pages">Main</button></Link>
+            <Link to="/pages/beverage/beverage"><button className="pages">Beverage</button></Link>
+            <Link to="/pages/dessert/dessert"><button className="pages">Dessert</button></Link>
+          <span className='server'><Server /></span>
+          <span className='payment'><Payment /></span>
           </div>
+          <div className='menuitemcontainer'>
+            <Switch>
+              <Route exact path="/"><Home /></Route>
+              <Route path="/pages/appetizer/appetizer"><Appetizer /></Route>
+              <Route path="/pages/main/main"><Main /></Route>
+              <Route path="/pages/beverage/beverage"><Beverage /></Route>
+              <Route path="/pages/dessert/dessert"><Dessert /></Route>
+            </Switch>
+            <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
+          </div>
+        </Router>
+        <div className='orderlistcontainer'>OrderListContainer
+          <div className='order'>
+              OrderList
+            <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
+            <OrderlistSendBtn />
+          </div>
+        </div>
+      </div>
           
-          
-          <div className='header'>Footer</div> 
-        {/* <Footer className='footer'/> */}
+      <div className='footer'>Footer</div> 
+      {/* <Footer className='footer'/> */}
     </>
   )
 }

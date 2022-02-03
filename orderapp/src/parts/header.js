@@ -1,7 +1,9 @@
+import './header.css';
+
 function Header() {
     return (
-      <div>
-          Header
+      <div className="header-title">
+          Ambrosial
       </div>
     );
   }
