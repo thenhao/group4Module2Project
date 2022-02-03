@@ -89,8 +89,8 @@ function Menuitemcomponent(props){
                     <img src={props.data.src} id="image" alt={props.data.alt}/>
                 </div>
 
-                 <div>
-                     <label>{props.data.name}</label>
+                 <div className='textandprice'>
+                     <label>{props.data.name}, </label>
                      <label>${props.data.price}</label>
                  </div>
                 
