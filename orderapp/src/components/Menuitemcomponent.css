@@ -1,6 +1,5 @@
 #imagecontainer{
     width:200px;
-    
 }
 
 #image{
@@ -19,12 +18,28 @@
     justify-items: center;
     align-items: center;
     border: 1px solid black;
+    padding: 10px;
+}
+
+.item-desc-container{
+    text-align: center;
+    width: 150px;
+}
+
+.quantity-container{
+    text-align: center;
 }
 
 .minusbutton .plusbutton{
     width:50px;
 }
 
+.menu-input{
+    width: 10%;
+    text-align: center;
+    margin: 10px
+}
+
 .addbutton{
-    width:100px;
+    width:50px;
 }
