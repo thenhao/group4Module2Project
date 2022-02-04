@@ -1,12 +1,12 @@
 import React from 'react'
 import './OrderlistPopUp.css'
+import Invoice from './Invoice.js'
+import './OrderlistPopUp.css';
 import AddToCartItems from './OrderlistContainer'
 
 function OrderlistPopUp(props) {
     //Used for Popup function only. Content to be in OrderListSendBtn.
     //Trigger with props and question mark to check if its true
-
-    
 
 
 
@@ -18,13 +18,16 @@ function OrderlistPopUp(props) {
                 {props.children}
 
                 {/* Insert item list table here */}
-                <div className="table-col-1">
+
+    <button className="close" onClick={() => props.setTrigger(false)}>X</button>
+    <h1 className="popupTitle">Order List</h1>
+    <Invoice className="invoice" />
+    <div className="table">
     <table>
         <thead>
-            <th colSpan="3"><h1>Confirm Order List</h1></th>
             <tr>
-                <th width ="40%"> Item Name</th>
-                <th width ="60%"> Quantity</th>
+                <th> Item Name</th>
+                <th> Quantity</th>
                 <th> Price</th>
             </tr>
         </thead>

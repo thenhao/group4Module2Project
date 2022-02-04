@@ -10,8 +10,6 @@ import AddToCartItems from './OrderlistContainer'
 function OrderlistSendBtn () {
     const [buttonPopup, setButtonPopup] = useState(false);
 
-
-
     return (
         <div className="sendbtn">
             <main>
