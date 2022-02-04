@@ -110,8 +110,9 @@ function App() {
         </div>
       </div>
           
-      <div className='footer'>Footer</div> 
-      {/* <Footer className='footer'/> */}
+      <div className='footer'>
+        <Footer/>
+      </div> 
     </>
   )
 }
