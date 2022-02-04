@@ -34,7 +34,7 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 * GitHub
 
 ## Illustrations
-!(https://ibb.co/dkL4cHj)
+![](https://ibb.co/dkL4cHj)
 
 ## Getting Started
 
