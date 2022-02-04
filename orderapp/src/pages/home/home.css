@@ -4,9 +4,13 @@
     font-size: 45px;
 }
 
-#mojito-banner {
+.image-banner {
     display: block;
     margin: 0 auto;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
-    padding-bottom: 30px;
+    overflow: hidden;
 }
+
+
