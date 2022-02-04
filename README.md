@@ -10,9 +10,6 @@
 
 ## Introduction
 This is a group project for the SkillsUnion/NTU Software Developer Immersive course. Customers of Restaurant can access the electronic ordering menu through the QR code.
-- React
-- Axios
-- JSON server
 
 ## Contributors
 [Long Tian Hao](https://github.com/thenhao)
@@ -30,12 +27,14 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 * CSS
 * JavaScript
 * React
+* React Router Dom
+* Axios
 * JSON Server
 * Visual Studios Code
 * GitHub
 
 ## Illustrations
-![]()
+!(https://ibb.co/dkL4cHj)
 
 ## Getting Started
 
