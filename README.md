@@ -39,6 +39,10 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 
 ![https://i.ibb.co/HGxT29B/image.jpg](https://i.ibb.co/HGxT29B/image.jpg)
 
+### Data flow structure
+
+![https://i.ibb.co/0YsnnFv/Untitled.jpg](https://i.ibb.co/0YsnnFv/Untitled.jpg)
+
 ## Getting Started
 
 ### Usage
