@@ -1,6 +1,18 @@
+h2 {
+  font-family: "Vibur", cursive;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.empty-list {
+  font-family: "Yomogi", cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
 .table-header {
   width: 150px;
-  padding: 20px;
+  padding: 10px;
   font-family: "Yomogi", cursive;
   font-weight: bold;
   font-size: 18px;
@@ -10,7 +22,7 @@
   text-align: center;
   padding-bottom: 10px;
   font-family: "Yomogi", cursive;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .quantityDisplay {
