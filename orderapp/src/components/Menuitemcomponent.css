@@ -1,7 +1,6 @@
 #imagecontainer{
     width:200px;
     /* height:133.29px; */
-    
 }
 
 #image{
@@ -29,10 +28,15 @@
     /* padding-top: 20px; */
 }
 
-.minusbutton .plusbutton{
+.minusbutton,
+.plusbutton {
     width:50px;
 }
 
-.addbutton{
+.addbutton {
     width:100px;
+}
+
+.itemcomponent input {
+    text-align: center;
 }
