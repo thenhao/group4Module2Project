@@ -83,27 +83,25 @@ function Menuitemcomponent(props){
     }
 
     return(
-             <div className="itemcomponent">
+            <div className="itemcomponent">
                  
                 <div id="imagecontainer">
                     <img src={props.data.src} id="image" alt={props.data.alt}/>
                 </div>
 
-                 <div className='textandprice'>
-                     <label>{props.data.name}, </label>
-                     <label>${props.data.price}</label>
+                 <div className="item-desc-container">
+                     <label id="item-name">{props.data.name}</label><br/>
+                     <label id="item-price">${props.data.price}</label>
                  </div>
                 
-                <div>
+                <div className="quantity-container">
                     <Custombutton className="minusbutton" sign="-" click={minus}/>
-                    <input type="text" value={itemCount} onChange={minmaxquantity}></input>
+                    <input className="menu-input" type="text" value={itemCount} onChange={minmaxquantity}></input>
                     <Custombutton className="plusbutton" sign="+" click={plus}/>
                 </div>
                  
                  <button className='addbutton' onClick={sendtoorder}>Add</button>
             </div>
-        
-    
     )
 }
 

@@ -1,7 +1,5 @@
 #imagecontainer{
     width:200px;
-    /* height:133.29px; */
-    
 }
 
 #image{
@@ -9,11 +7,6 @@
     height:fit-content; */
     width:200px;
     height:200px;
-}
-
-.textandprice{
-    width:178.18px;
-    height:36px;
 }
 
 .itemcomponent{
@@ -26,13 +19,32 @@
     justify-items: center;
     align-items: center;
     border: 1px solid black;
-    /* padding-top: 20px; */
+    padding: 10px;
+}
+
+.item-desc-container{
+    text-align: center;
+    width: 180px;
+    height:36px;
+    font-family:'Calligraffitti', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.quantity-container{
+    text-align: center;
 }
 
 .minusbutton .plusbutton{
     width:50px;
 }
 
+.menu-input{
+    width: 10%;
+    text-align: center;
+    margin: 10px
+}
+
 .addbutton{
-    width:100px;
+    width:50px;
 }

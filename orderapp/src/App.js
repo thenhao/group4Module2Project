@@ -1,8 +1,6 @@
 import API from './api/api.js';
 import React, {useState, useEffect} from 'react';
 
-
-
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import Home from './pages/home/home';
 import Appetizer from './pages/appetizer/appetizer';
@@ -73,47 +71,49 @@ function App() {
     console.log("additem is", additem);
   },[additem]);
   
+  // state for storing the subpage status
+  const [pageState, setPageState] = useState('');
+  
+
   return (
     <>
-      
-          <div className='header'>Header</div>
+      <div className="header">
+        <Header/>
+      </div>
 
-          <div className='navbarcontainer'>
-            <Router>
-              <div className="navbar">
-                <Link to="/"><button className="pages">Home</button></Link>
-                <Link to="/pages/appetizer/appetizer"><button className="pages">Appetizer</button></Link>
-                <Link to="/pages/main/main"><button className="pages">Main</button></Link>
-                <Link to="/pages/beverage/beverage"><button className="pages">Beverage</button></Link>
-                <Link to="/pages/dessert/dessert"><button className="pages">Dessert</button></Link>
-              <span className='server'><Server /></span>
-              <span className='payment'><Payment /></span>
-              </div>
-              <div className='menuitemcontainer'>
-                <Switch>
-                  <Route exact path="/"><Home /></Route>
-                  <Route path="/pages/appetizer/appetizer"><Appetizer data={menu} addtocart={AddItemToCart} type={CategoryData[0]}/></Route>
-                  <Route path="/pages/main/main"><Main data={menu} addtocart={AddItemToCart} type={CategoryData[1]}/></Route>
-                  <Route path="/pages/beverage/beverage"><Beverage data={menu} addtocart={AddItemToCart} type={CategoryData[2]}/></Route>
-                  <Route path="/pages/dessert/dessert"><Dessert data={menu} addtocart={AddItemToCart} type={CategoryData[3]}/></Route>
-                </Switch>
-                {/* <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/> */}
-              </div>
-            </Router>
-            <div className='orderlistcontainer'>OrderListContainer
-                <div className='order'>
-                    OrderList
-
-                  <CartItems selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
-                  <OrderlistSendBtn />
-
-                </div>
-            </div>
+      <div className='navbarcontainer'>
+        <Router>
+          <div className="navbar">
+            <Link to="/"><button onClick={()=> {setPageState("Home")}} className={pageState === "Home"? "selected-page" : "pages"}>Home</button></Link>
+            <Link to="/pages/appetizer"><button onClick={()=> {setPageState("Appetizers")}} className={pageState === "Appetizers"? "selected-page" : "pages"}>Appetizers</button></Link>
+            <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
+            <Link to="/pages/beverage"><button onClick={()=> {setPageState("Beverages")}} className={pageState === "Beverages"? "selected-page" : "pages"}>Beverages</button></Link>
+            <Link to="/pages/dessert"><button onClick={()=> {setPageState("Desserts")}} className={pageState === "Desserts"? "selected-page" : "pages"}>Desserts</button></Link>
+            <span className='server'><Server /></span>
+            <span className='payment'><Payment /></span>
           </div>
+          <div className='menuitemcontainer'>
+            <Switch>
+              <Route exact path="/"><Home /></Route>
+              <Route path="/pages/appetizer"><Appetizer data={menu} addtocart={AddItemToCart} type={CategoryData[0]}/></Route>
+              <Route path="/pages/main"><Main data={menu} addtocart={AddItemToCart} type={CategoryData[1]}/></Route>
+              <Route path="/pages/beverage"><Beverage data={menu} addtocart={AddItemToCart} type={CategoryData[2]}/></Route>
+              <Route path="/pages/dessert"><Dessert data={menu} addtocart={AddItemToCart} type={CategoryData[3]}/></Route>
+            </Switch>
+             {/* <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/> */}
+          </div>
+        </Router>
+        <div className='orderlistcontainer'>
+          <div className='order'>
+            <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
+            <OrderlistSendBtn />
+          </div>
+        </div>
+      </div>
           
-          
-          <div className='header'>Footer</div> 
-        {/* <Footer className='footer'/> */}
+      <div className='footer'>
+        <Footer/>
+      </div> 
     </>
   )
 }
