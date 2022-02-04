@@ -70,9 +70,12 @@ function App() {
     console.log("additem is", additem);
   },[additem]);
   
+  // state for storing the subpage status
+  const [pageState, setPageState] = useState('');
+  
+
   return (
     <>
-      
       <div className="header">
         <Header/>
       </div>
@@ -80,21 +83,21 @@ function App() {
       <div className='navbarcontainer'>
         <Router>
           <div className="navbar">
-            <Link to="/"><button className="pages">Home</button></Link>
-            <Link to="/pages/appetizer/appetizer"><button className="pages">Appetizer</button></Link>
-            <Link to="/pages/main/main"><button className="pages">Main</button></Link>
-            <Link to="/pages/beverage/beverage"><button className="pages">Beverage</button></Link>
-            <Link to="/pages/dessert/dessert"><button className="pages">Dessert</button></Link>
+            <Link to="/"><button onClick={()=> {setPageState("Home")}} className={pageState === "Home"? "selected-page" : "pages"}>Home</button></Link>
+            <Link to="/pages/appetizer"><button onClick={()=> {setPageState("Appetizers")}} className={pageState === "Appetizers"? "selected-page" : "pages"}>Appetizers</button></Link>
+            <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
+            <Link to="/pages/beverage"><button onClick={()=> {setPageState("Beverages")}} className={pageState === "Beverages"? "selected-page" : "pages"}>Beverages</button></Link>
+            <Link to="/pages/dessert"><button onClick={()=> {setPageState("Desserts")}} className={pageState === "Desserts"? "selected-page" : "pages"}>Desserts</button></Link>
             <span className='server'><Server /></span>
             <span className='payment'><Payment /></span>
           </div>
           <div className='menuitemcontainer'>
             <Switch>
               <Route exact path="/"><Home /></Route>
-              <Route path="/pages/appetizer/appetizer"><Appetizer /></Route>
-              <Route path="/pages/main/main"><Main /></Route>
-              <Route path="/pages/beverage/beverage"><Beverage /></Route>
-              <Route path="/pages/dessert/dessert"><Dessert /></Route>
+              <Route path="/pages/appetizer"><Appetizer /></Route>
+              <Route path="/pages/main"><Main /></Route>
+              <Route path="/pages/beverage"><Beverage /></Route>
+              <Route path="/pages/dessert"><Dessert /></Route>
             </Switch>
             <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
           </div>
