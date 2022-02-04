@@ -1,4 +1,4 @@
-# Restaurant
+# In-Restaurant Menu App
 
 ## Table of contents
 * Introduction
