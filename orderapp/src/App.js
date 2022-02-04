@@ -99,9 +99,8 @@ function App() {
             <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
           </div>
         </Router>
-        <div className='orderlistcontainer'>OrderListContainer
+        <div className='orderlistcontainer'>
           <div className='order'>
-              OrderList
             <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
             <OrderlistSendBtn />
           </div>
