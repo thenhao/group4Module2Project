@@ -9,7 +9,7 @@
 * Authors and acknowledgement
 
 ## Introduction
-This is a group project for the SkillsUnion/NTU Software Developer Immersive course. Customers of Restaurant can access the electronic ordering menu through the QR code.
+This is a group project for the SkillsUnion/NTU Software Developer Immersive course. Customers of 'Ambrosial' can access the electronic ordering menu through the QR code.
 
 ## Contributors
 [Long Tian Hao](https://github.com/thenhao)
