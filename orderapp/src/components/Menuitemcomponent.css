@@ -13,6 +13,7 @@
 .textandprice{
     width:178.18px;
     height:36px;
+    text-align: center;
 }
 
 .itemcomponent{
@@ -26,6 +27,8 @@
     align-items: center;
     border: 1px solid black;
     /* padding-top: 20px; */
+    padding: 10px;
+    margin: 20px;
 }
 
 .minusbutton,
@@ -35,6 +38,7 @@
 
 .addbutton {
     width:100px;
+    margin-top: 5px;
 }
 
 .itemcomponent input {

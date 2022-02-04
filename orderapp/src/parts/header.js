@@ -1,7 +1,9 @@
+import './header.css';
+
 function Header() {
     return (
-      <div>
-          Header
+      <div className="header">
+          Please edit header under parts/header.js or parts/header.css
       </div>
     );
   }

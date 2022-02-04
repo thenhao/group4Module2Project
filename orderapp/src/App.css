@@ -2,11 +2,6 @@
     width:200px;
 } */
 
-.header{
-    border:1px solid black;
-    height: 120px;
-}
-
 .navbarcontainer{
     border:1px solid black;
     display:flex;
@@ -61,18 +56,13 @@
 }
 
 .order{
-    border:1px solid black;
     margin:10px;
     height: 500px;
-    
 }
 
-.footer{
-    border:1px solid black;
-    height: 120px;
+.orderTitle {
+    text-align: center;
 }
-
-
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */

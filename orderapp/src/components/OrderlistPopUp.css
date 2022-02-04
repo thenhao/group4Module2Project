@@ -15,7 +15,7 @@
 
 .popup-page {
     z-index:9999; 
-    overflow:auto;
+    overflow:scroll;
     position: relative;
     border-radius: 10px;
     padding: 30px;
@@ -72,7 +72,7 @@ td {
     justify-content: center;
     padding: 10px;
     max-width: 150px;
-    margin: 100px 20px 0 180px;
+    margin: 80px 20px 0 180px;
     background-color: rgb(240, 240, 240);
 }
 
@@ -81,7 +81,7 @@ td {
     justify-content: center;
     padding: 10px;
     max-width: 150px;
-    margin: 100px 20px 0 10px;
+    margin: 80px 20px 0 10px;
     background-color: rgb(240, 240, 240);
 
 }

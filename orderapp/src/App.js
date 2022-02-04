@@ -75,9 +75,7 @@ function App() {
   
   return (
     <>
-      
-          <div className='header'>Header</div>
-
+          <Header />
           <div className='navbarcontainer'>
             <Router>
               <div className="navbar">
@@ -100,9 +98,9 @@ function App() {
                 {/* <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/> */}
               </div>
             </Router>
-            <div className='orderlistcontainer'>OrderListContainer
+            <div className='orderlistcontainer'>
                 <div className='order'>
-                    OrderList
+                    <h2 className="orderTitle">Order List</h2>
 
                   <CartItems selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
                   <OrderlistSendBtn />
@@ -110,10 +108,7 @@ function App() {
                 </div>
             </div>
           </div>
-          
-          
-          <div className='header'>Footer</div> 
-        {/* <Footer className='footer'/> */}
+          <Footer />
     </>
   )
 }
