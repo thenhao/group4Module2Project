@@ -85,8 +85,8 @@ function App() {
             <Link to="/pages/main/main"><button className="pages">Main</button></Link>
             <Link to="/pages/beverage/beverage"><button className="pages">Beverage</button></Link>
             <Link to="/pages/dessert/dessert"><button className="pages">Dessert</button></Link>
-          <span className='server'><Server /></span>
-          <span className='payment'><Payment /></span>
+            <span className='server'><Server /></span>
+            <span className='payment'><Payment /></span>
           </div>
           <div className='menuitemcontainer'>
             <Switch>
