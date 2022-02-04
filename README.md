@@ -30,6 +30,7 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 * React Router Dom
 * Axios
 * JSON Server
+* EmailJS
 * Visual Studios Code
 * GitHub
 
