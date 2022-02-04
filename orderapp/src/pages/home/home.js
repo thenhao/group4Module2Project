@@ -1,8 +1,11 @@
 import React from 'react';
 import './home.css';
+// import imagedata from './imagedata';
+// import ImageSlider from './imageslider';
 
 export default function Home() {
 
+  
   return (
     <div>
       <h1 className="promotion">HAPPY HOUR PROMOTION</h1><br />
@@ -11,6 +14,7 @@ export default function Home() {
       alt="promotion"
       height="550"
       />
+      {/* <ImageSlider slides={imagedata}/> */}
     </div>
   );
 }
