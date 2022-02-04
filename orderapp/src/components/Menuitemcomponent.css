@@ -3,9 +3,15 @@
 }
 
 #image{
-    width: fit-content;
-    height:fit-content;
+    /* width: fit-content;
+    height:fit-content; */
     width:200px;
+    height:200px;
+}
+
+.textandprice{
+    width:178.18px;
+    height:36px;
 }
 
 .itemcomponent{

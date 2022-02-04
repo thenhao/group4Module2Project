@@ -28,6 +28,16 @@
 
 }
 
+/* #table-col-1 h1 {
+    margin:auto;
+    line-height:50px;
+    align-content: center;
+} */
+
+td {
+    text-align: center;
+  }
+
 .amend-btn {
     position: relative;
     justify-content: center;

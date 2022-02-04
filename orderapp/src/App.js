@@ -15,7 +15,8 @@ import Server from './parts/server';
 import CartItems from './components/CartItems';
 import OrderlistSendBtn from './components/OrderlistSendBtn';
 import AddedItem from './components/OrderlistContainer.js';
-import MenuitemContainer from './components/MenuitemContainer.js';
+// import MenuitemContainer from './components/MenuitemContainer.js';
+import CategoryData from './components/CategoryData.js';
 
 import './App.css';
 import './components/OrderlistSendBtn.css';
@@ -94,12 +95,12 @@ function App() {
           <div className='menuitemcontainer'>
             <Switch>
               <Route exact path="/"><Home /></Route>
-              <Route path="/pages/appetizer"><Appetizer /></Route>
-              <Route path="/pages/main"><Main /></Route>
-              <Route path="/pages/beverage"><Beverage /></Route>
-              <Route path="/pages/dessert"><Dessert /></Route>
+              <Route path="/pages/appetizer"><Appetizer data={menu} addtocart={AddItemToCart} type={CategoryData[0]}/></Route>
+              <Route path="/pages/main"><Main data={menu} addtocart={AddItemToCart} type={CategoryData[1]}/></Route>
+              <Route path="/pages/beverage"><Beverage data={menu} addtocart={AddItemToCart} type={CategoryData[2]}/></Route>
+              <Route path="/pages/dessert"><Dessert data={menu} addtocart={AddItemToCart} type={CategoryData[3]}/></Route>
             </Switch>
-            <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/>
+             {/* <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/> */}
           </div>
         </Router>
         <div className='orderlistcontainer'>
