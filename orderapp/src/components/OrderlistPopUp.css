@@ -28,12 +28,9 @@
 
 }
 
-/* #table-col-1 h1 {
-    margin:auto;
-    line-height:50px;
-    align-content: center;
-} */
-
+/* No adjustment needed for <th> as they are bold and centered by default 
+   <td> are regular and left-aligned so need to adjust to center
+*/
 td {
     text-align: center;
   }

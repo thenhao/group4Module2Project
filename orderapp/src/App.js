@@ -19,7 +19,6 @@ import OrderlistSendBtn from './components/OrderlistSendBtn';
 import AddedItem from './components/OrderlistContainer.js';
 // import MenuitemContainer from './components/MenuitemContainer.js';
 import CategoryData from './components/CategoryData.js';
-
 import './App.css';
 import './components/OrderlistSendBtn.css';
 
@@ -105,9 +104,10 @@ function App() {
                     OrderList
 
                   <CartItems selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
-                  <OrderlistSendBtn />
-
+                  
                 </div>
+                <div className="sendbtn"><OrderlistSendBtn /></div>
+              
             </div>
           </div>
           
