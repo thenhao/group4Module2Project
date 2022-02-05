@@ -1,5 +1,15 @@
-.footer {
-    height: 30px;
-    background-color: white;
-    border: 1px solid black;
+.footer-container {
+  text-align: center;
+}
+
+.fb-img, .instagram-img, .twitter-img {
+  width: 50px;
+  padding: 20px;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 13px;
+  font-family: "Yomogi", cursive;
+  font-weight: bold;
 }

@@ -6,10 +6,10 @@
 * Built with
 * Illustrations
 * Getting Started
-* Authors and acknowledgement
+* Acknowledgement
 
 ## Introduction
-This is a group project for the SkillsUnion/NTU Software Developer Immersive course. Customers of 'Ambrosial' can access the electronic ordering menu through the QR code.
+This is a group project for the SkillsUnion/NTU Software Developer Immersive course. Customers of 'Ambrosial' can access the electronic ordering menu through the QR code. We utilized the Agile / Scrum methodology to guide our project management process.
 
 ## Contributors
 [Long Tian Hao](https://github.com/thenhao)
@@ -33,6 +33,7 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 * EmailJS
 * Visual Studios Code
 * GitHub
+* Agile / Scrum
 
 ## Illustrations
 
@@ -59,5 +60,5 @@ You can:
 * Call the server by clicking the bell icon.
 * Request for the bill by clicking the payment icon.
 
-## Authors and acknowledgement
+## Acknowledgement
 * SkillsUnion
