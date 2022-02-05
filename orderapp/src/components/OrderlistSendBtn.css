@@ -1,10 +1,19 @@
 .sendbtn {
 /* To position this at API.css or as an independent style? */
 position: relative;
-margin-left: 30%;
-width: 110px;
+margin-left: 35%;
+width: 120px;
 height: 20px;
 top: 600px;
-
 }
 
+.sendbtn button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.sendbtn button:hover {
+    cursor:pointer;
+    font-weight: bold;
+}
