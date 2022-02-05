@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function TotalBillCalculator(props) {
-  
+
   let totalBill = 0;
   for (const element of props.selectedItemList) {
     totalBill = (totalBill + element.price * element.quantity) * 1.07;
@@ -14,7 +14,7 @@ function TotalBillCalculator(props) {
     return null;
   }
   else {
-    return `Your Total bill comes up to $${finalBill} inclusive of 7% gst`;
+    return <p>Total Bill (inclusive of 7% GST): ${finalBill}</p>;
   }
 }
 
