@@ -10,6 +10,7 @@ import AddToCartItems from './OrderlistContainer'
 function OrderlistSendBtn (props) {
     const [buttonPopup, setButtonPopup] = useState(false);
 
+    //if-else statement to show button when cart is filled and disappear when cart is empty
     if(props.selectedItemList.length === 0) {
       return null;
     }
