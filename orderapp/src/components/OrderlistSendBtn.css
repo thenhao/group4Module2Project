@@ -1,10 +1,10 @@
-.sendbtn {
-/* To position this at API.css or as an independent style? */
-position: relative;
-margin-left: 35%;
-width: 120px;
-height: 20px;
-top: 600px;
+.sendbtn-container {
+  text-align: center;
+}
+
+#sendorderbtn {
+  position: relative;
+  top: 30px;
 }
 
 
