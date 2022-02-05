@@ -11,28 +11,65 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .popup-page {
     z-index:9999; 
-    overflow:auto;
+    overflow:scroll;
     position: relative;
     border-radius: 10px;
     padding: 30px;
     width: 75%;
     height: 300px;
     max-width: 600px;
-    
     background-color: #FFF;
-
+    overflow-x: hidden;
 }
+
 
 /* No adjustment needed for <th> as they are bold and centered by default 
    <td> are regular and left-aligned so need to adjust to center
 */
+
+/* #table-col-1 h1 {
+    margin:auto;
+    line-height:50px;
+    align-content: center;
+} */
+
+.invoice {
+    position: relative;
+    left: 0;
+}
+
+.table {
+    position: relative;
+    top: 0;
+    left: 10%;
+}
+
+.popupTitle,
 td {
     text-align: center;
+  }
+
+  th {
+      padding: 0 50px;
+  }
+
+  .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background-color: white;
+  }
+
+  .close:hover,
+  .amend-btn:hover,
+  .confirm-send-btn:hover {
+      cursor:pointer;
+      font-weight: bold;
   }
 
 .amend-btn {
@@ -40,11 +77,8 @@ td {
     justify-content: center;
     padding: 10px;
     max-width: 150px;
-    margin-top: 200px;
-    margin-left: 180px;
-    margin-right: 20px;
-        background-color: rgb(240, 240, 240);
-
+    margin: 80px 20px 0 180px;
+    background-color: rgb(240, 240, 240);
 }
 
 .confirm-send-btn {
@@ -52,9 +86,7 @@ td {
     justify-content: center;
     padding: 10px;
     max-width: 150px;
-    margin-top: 200px;
-    margin-left: 10px;
-    margin-right: 20px;
-        background-color: rgb(240, 240, 240);
+    margin: 80px 20px 0 10px;
+    background-color: rgb(240, 240, 240);
 
 }

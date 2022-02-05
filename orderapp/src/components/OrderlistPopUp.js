@@ -1,16 +1,20 @@
-import React from 'react';
+import React from 'react'
 import { useState } from 'react';
-import './OrderlistPopUp.css';
 import ConfirmedOrder from './ConfirmSendBtn';
 import CartItems from './CartItems';
+import Invoice from './Invoice.js'
+import './OrderlistPopUp.css';
+import AddToCartItems from './OrderlistContainer'
+
 
 function OrderlistPopUp(props) {
     // Used for Popup function only. Content to be in OrderListSendBtn.
     // Trigger with props and question mark to check if its true
 
+
     // Use this variable to show the message after sending message:
     //Copy this portion from https://www.emailjs.com/docs/examples/reactjs/
-    
+
     return (props.trigger) ?  (
         //A pop-up button after clicking Send Order button
         <div className="orderlist-popup">
@@ -19,16 +23,20 @@ function OrderlistPopUp(props) {
                 {props.children}
 
                 {/* Insert item list table here */}
-                <div className="table-col-1">
+
+    <button className="close" onClick={() => props.setTrigger(false)}>X</button>
+    <h1 className="popupTitle">Order List</h1>
+    <Invoice className="invoice" />
+    <div className="table">
     <table>
         <thead>
             <tr>
                 <th colSpan="3"><h1>Confirm Order List</h1></th>
             </tr>
-            
+
             <tr>
-                <th width ="40%"> Item Name</th>
-                <th width ="60%"> Quantity</th>
+                <th> Item Name</th>
+                <th> Quantity</th>
                 <th> Price</th>
             </tr>
             

@@ -11,11 +11,9 @@ const OrderList = (props) => {
 
   return (
     <div>
-      <p>
-        ${itemName}
-        <h1>${itemPrice}</h1>
-        <h2>${itemQuantity}</h2>
-      </p>
+        <span>${itemName}</span>
+        <span>${itemPrice}</span>
+        <span>${itemQuantity}</span>
     </div>
   );
 };

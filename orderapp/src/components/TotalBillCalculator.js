@@ -1,9 +1,12 @@
-import React from "React";
+import React, { useState, useEffect } from "react";
 
-const TotalBillCalculator = (props) => {
-  //clarify the data structure that is being passed
-
-  return <div></div>;
-};
+function TotalBillCalculator(props) {
+  let totalBill = 0;
+  for (const element of props.selectedItemList) {
+    totalBill = (totalBill + element.price * element.quantity) * 1.07;
+  }
+  let finalBill = Math.round(totalBill * 100) / 100;
+  return `Your Total bill comes up to $${finalBill} inclusive of 7% gst`;
+}
 
 export default TotalBillCalculator;

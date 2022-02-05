@@ -1,3 +1,16 @@
 .promotion {
     text-align: center;
+    font-family: "Vibur",cursive;
+    font-size: 45px;
 }
+
+.image-banner {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+

@@ -1,22 +1,21 @@
 .sendbtn {
 /* To position this at API.css or as an independent style? */
-display: inline-block;
-position: absolute;
-margin: 0;
-width: 110px;
+position: relative;
+margin-left: 35%;
+width: 120px;
 height: 20px;
-border-bottom: 10%;
-
+top: 600px;
 }
 
-/* div.sendbtn { */
-    /* To position this at API.css or as an independent style? */
-/*     
-    margin: 10;
-    padding: 10px;
-    bottom: 10%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
-    } */
+
+.sendbtn button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.sendbtn button:hover {
+    cursor:pointer;
+    font-weight: bold;
+}
 
