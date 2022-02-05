@@ -106,7 +106,7 @@ function App() {
         <div className='orderlistcontainer'>
           <div className='order'>
             <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>                
-            <OrderlistSendBtn />
+            <OrderlistSendBtn selectedItemList={selectedItemList}/>
           </div>
         </div>
       </div>
