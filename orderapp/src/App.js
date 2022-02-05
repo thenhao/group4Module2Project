@@ -108,6 +108,7 @@ function App() {
             <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>
             <TotalBillCalculator selectedItemList={selectedItemList} />
             <OrderlistSendBtn />
+            <div className="sendbtn"><OrderlistSendBtn /></div>
           </div>
         </div>
       </div>
