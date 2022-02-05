@@ -1,0 +1,80 @@
+.signuptitle{
+    font-family: 'Licorice', cursive;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+}
+
+.signupsubtitle{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Yomogi', cursive;
+    text-align: center;
+}
+
+.signup {
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    right: 145px;
+    
+}
+
+.imageicon {
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.formcontainer{
+    
+    width:50%;
+}
+
+.inputvalue{
+    line-height: 30px;
+    margin-left: 65px;
+}
+
+.inputcheckbox{
+    
+    margin-left: 65px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-top: 13px;
+}
+
+.inputcheckboxcontainer{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.signupagreement{
+    width:370px;
+    margin-left: 65px;
+}
+
+.signupbutton{
+    width:370px;
+    margin-left: 65px;
+    height:30px;
+}
+.signupimagecontainer{
+    
+    width:49%;
+    height: fit-content;
+    padding-top:2px;
+}
+
+.signupimage{
+    height:480.69px;
+    padding:0px;
+}
+
+.signupcontainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

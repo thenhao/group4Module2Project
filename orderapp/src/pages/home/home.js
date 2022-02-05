@@ -20,6 +20,7 @@ export default function Home() {
         </div>
       </div>
       {/* <ImageSlider slides={imagedata}/> */}
+      
     </div>
   );
 }
