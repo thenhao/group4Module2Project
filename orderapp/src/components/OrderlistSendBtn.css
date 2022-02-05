@@ -7,3 +7,13 @@
   top: 30px;
 }
 
+.sendbtn button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.sendbtn button:hover {
+    cursor:pointer;
+    font-weight: bold;
+}
