@@ -1,7 +1,16 @@
-.promotion {
+.promotion-header {
     text-align: center;
     font-family: "Vibur",cursive;
     font-size: 45px;
+}
+
+.promotion {
+    text-align: center;
+    font-family: "Vibur",cursive;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 20px;
 }
 
 .image-banner {
