@@ -1,12 +1,12 @@
 #imagecontainer{
     width:200px;
-    
 }
 
 #image{
-    width: fit-content;
-    height:fit-content;
+    /* width: fit-content;
+    height:fit-content; */
     width:200px;
+    height:200px;
 }
 
 .itemcomponent{
@@ -19,12 +19,32 @@
     justify-items: center;
     align-items: center;
     border: 1px solid black;
+    padding: 10px;
+}
+
+.item-desc-container{
+    text-align: center;
+    width: 180px;
+    height:36px;
+    font-family:'Calligraffitti', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.quantity-container{
+    text-align: center;
 }
 
 .minusbutton .plusbutton{
     width:50px;
 }
 
+.menu-input{
+    width: 10%;
+    text-align: center;
+    margin: 10px
+}
+
 .addbutton{
-    width:100px;
+    width:50px;
 }

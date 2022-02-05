@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .popup-page {
@@ -23,21 +22,58 @@
     width: 75%;
     height: 300px;
     max-width: 600px;
-    
     background-color: #FFF;
-
+    overflow-x: hidden;
 }
+
+/* #table-col-1 h1 {
+    margin:auto;
+    line-height:50px;
+    align-content: center;
+} */
+
+.invoice {
+    position: relative;
+    left: 0;
+}
+
+.table {
+    position: relative;
+    top: 0;
+    left: 10%;
+}
+
+.popupTitle,
+td {
+    text-align: center;
+  }
+
+  th {
+      padding: 0 50px;
+  }
+
+  .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background-color: white;
+  }
+
+  .close:hover,
+  .amend-btn:hover,
+  .confirm-send-btn:hover {
+      cursor:pointer;
+      font-weight: bold;
+  }
 
 .amend-btn {
     position: relative;
     justify-content: center;
     padding: 10px;
     max-width: 150px;
-    margin-top: 200px;
-    margin-left: 180px;
-    margin-right: 20px;
-        background-color: rgb(240, 240, 240);
-
+    margin: 100px 20px 0 180px;
+    background-color: rgb(240, 240, 240);
 }
 
 .confirm-send-btn {
@@ -45,9 +81,7 @@
     justify-content: center;
     padding: 10px;
     max-width: 150px;
-    margin-top: 200px;
-    margin-left: 10px;
-    margin-right: 20px;
-        background-color: rgb(240, 240, 240);
+    margin: 100px 20px 0 10px;
+    background-color: rgb(240, 240, 240);
 
 }
