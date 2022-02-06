@@ -2,6 +2,21 @@
     width:200px;
 } */
 
+.server {
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    right: 80px;
+}
+
+.server img {
+    padding: 5px;
+}
+
+.server img:hover {
+    cursor: pointer;
+}
+
 .header{
     height: 150px;
     text-align: center;
@@ -34,6 +49,12 @@
 
 .navbar{
     margin: 0 auto;
+}
+
+.services {
+    position: absolute;
+    top: 160px;
+    right: 0;
 }
 
 .pages {
@@ -109,15 +130,51 @@
 @media only screen and (max-width: 600px) {
     * {
         width: 100%;
-        overflow-x: hidden;
+    }
+
+    .services {
+        position: relative;
+        top: 0;
+        right: 30%;
+    }
+
+    .server {
+        height: 10px;
+        width: 20px;
+        position: absolute;
+        right: 100px;
+    }
+
+    .payment {
+        height: 5px;
+        width: 20px;
+        position: absolute;
+        right: 50px;
     }
     
     .toggleMenu {
         display: flex;
-        position: relative;
-        top: 0;
-        left: 180px;
+        position: absolute;
+        top: 3%;
+        right: 5%;
         margin-bottom: -15px;
+    }
+
+    .navbarcontainer {
+        margin-top: -50px;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .menuitemcontainer {
+        margin-top: 30px;
+        width: 90vw;
+    }
+
+    .orderlistcontainer {
+        display: none;
     }
 }
 

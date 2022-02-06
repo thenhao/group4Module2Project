@@ -8,7 +8,7 @@ export default function Server() {
 
     return (
         <img src="https://icons-for-free.com/iconfiles/png/512/bell-131965017347068855.png" 
-            alt="payment icon" 
+            alt="server icon" 
             style={{height: 45, width: 40}}
             onClick={handleServer} />
     )

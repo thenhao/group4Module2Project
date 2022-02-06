@@ -77,6 +77,7 @@ function App() {
 
   return (
     <>
+      
       <div className="toggleMenu">
         <span className="bar"></span>
         <span className="bar"></span>
@@ -93,9 +94,12 @@ function App() {
             <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
             <Link to="/pages/beverage"><button onClick={()=> {setPageState("Beverages")}} className={pageState === "Beverages"? "selected-page" : "pages"}>Beverages</button></Link>
             <Link to="/pages/dessert"><button onClick={()=> {setPageState("Desserts")}} className={pageState === "Desserts"? "selected-page" : "pages"}>Desserts</button></Link>
-            <span className='server'><Server /></span>
-            <span className='payment'><Payment /></span>
+            <div className="services">
+              <span className='server'><Server /></span>
+              <span className='payment'><Payment /></span>
+            </div>
           </div>
+          
           <div className='menuitemcontainer'>
             <Switch>
               <Route exact path="/"><Home /></Route>
