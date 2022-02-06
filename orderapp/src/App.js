@@ -77,7 +77,6 @@ function App() {
 
   return (
     <>
-      
       <div className="toggleMenu">
         <span className="bar"></span>
         <span className="bar"></span>
