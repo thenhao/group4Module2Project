@@ -1,9 +1,0 @@
-.slideactive{
-    opacity:1;
-    transition-duration: 1s ease;
-}
-
-.slide{
-    opacity:0;
-    transition-duration: 1s ease;
-}
