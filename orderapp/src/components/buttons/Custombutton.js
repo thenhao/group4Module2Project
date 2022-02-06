@@ -1,8 +1,10 @@
+import './Custombutton.css';
+
 function Custombutton(props){
 
     return(
         <>
-            <button onClick={props.click}>{props.sign}</button>
+            <button className="button" onClick={props.click}>{props.sign}</button>
         </>
     )
 }

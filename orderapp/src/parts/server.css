@@ -1,14 +1,16 @@
 .server {
-    height: 60px;
-    width: 50px;
+    height: 30px;
+    width: 40px;
     position: absolute;
-    right: 80px;
+    right: 150px;
 }
 
-.server img {
+img {
     padding: 5px;
 }
 
-.server img:hover {
+img:hover {
     cursor: pointer;
+    width: 55px;
+    height: 55px;
 }

@@ -72,6 +72,7 @@ function CartItems(props) {
                   ${(obj.price*obj.quantity).toFixed(2)}
                 </td>
               </tr>
+              <hr/>
             </>
             
           );

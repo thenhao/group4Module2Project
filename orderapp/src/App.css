@@ -2,9 +2,47 @@
     width:200px;
 } */
 
+body {
+    margin: 0;
+    -webkit-animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: black;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+        opacity: 1;
+    }
+  }
+
+  @keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+        
+    }
+  }
+
+
+#root {
+    background-color: black;
+}
+
 .header{
-    height: 150px;
     text-align: center;
+    background-color: black;
 }
 
 .navbarcontainer{
@@ -15,6 +53,8 @@
 
 .navbar{
     margin: 0 auto;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
 }
 
 .pages {
@@ -24,6 +64,8 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
+    background-color: black;
+    color: white;
 }
 
 
@@ -34,11 +76,12 @@
 
 .selected-page {
     border: none;
-    background-color: white;
     padding: 10px 40px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
+    background-color: black;
+    color: white;
 }
 
 .selected-page:hover, .selected-page:before, .selected-page:after {
@@ -62,36 +105,31 @@
 }
 
 .menu{
-    border:1px solid black;
     margin:10px;
     height: 500px;
 }
 
 .orderlistcontainer{
-    border-top:1px solid black;
-    border-bottom:1px solid black;
-    border-right:1px solid black;
     width:29.7%;
 }
 
 .order{
-    border:1px solid black;
     margin:10px;
     height: 500px;
-    
 }
 
 .footer{
-    border:1px solid black;
     height: 120px;
 }
 
-
+.orderTitle {
+    text-align: center;
+}
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .header{
-        height: 150px;
+        height: 200px;
     }
     
     .navbar{
