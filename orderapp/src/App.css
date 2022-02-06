@@ -9,13 +9,24 @@
     right: 80px;
 }
 
-.server img {
+.payment {
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    right: 10px;
+}
+
+.server img,
+.payment img {
     padding: 5px;
 }
 
-.server img:hover {
+.server img:hover,
+.payment img:hover {
     cursor: pointer;
 }
+
+
 
 .header{
     height: 150px;
@@ -169,7 +180,7 @@
     }
 
     .menuitemcontainer {
-        margin-top: 30px;
+        margin-top: 40px;
         width: 90vw;
     }
 

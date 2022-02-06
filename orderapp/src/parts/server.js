@@ -1,5 +1,3 @@
-import './server.css';
-
 export default function Server() {
     const handleServer = () => {
         console.log("Server called!")
