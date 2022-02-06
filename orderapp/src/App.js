@@ -73,14 +73,25 @@ function App() {
   
   // state for storing the subpage status
   const [pageState, setPageState] = useState('');
+
+  // responsive design
+  const [show, setShow] = useState('');
+  const handleClick = () => {
+    
+    setShow(!show)
+  }
+
+  useEffect(() => {
+
+  }, [show])
   
 
   return (
     <>
       <div className="my-order">
-        <button className="my-order-button">My Order</button>
+        <button className="my-order-button" onClick={handleClick}>My Order</button>
       </div>
-      <div className="toggleMenu">
+      <div className="toggleMenu" onClick={handleClick}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>

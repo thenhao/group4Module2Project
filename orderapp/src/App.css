@@ -152,6 +152,7 @@
 
     .header {
         height: 200px;
+        margin-top: 60px;
     }    
     
     .services {
@@ -176,12 +177,15 @@
 
     .my-order-button {
         display: flex;
+        position: absolute;
+        top: 5%;
+        right: 18%;
     }
     
     .toggleMenu {
         display: flex;
         position: absolute;
-        top: 3%;
+        top: 5%;
         right: 5%;
         margin-bottom: -15px;
     }
@@ -203,13 +207,13 @@
 
     .menuitemcontainer {
         width: 100vw;
+        margin-top: 20px;
     }
 
     .orderlistcontainer {
         display: none;
         z-index: 1;
         background-color: white;
-        opacity: 95%;
         position: absolute;
         top: 50px;
         right: 60px;
@@ -221,7 +225,29 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .selected-page,
+    .pages {
+        padding: 10px 5px;
+    }
 
+    .navbar {
+        margin-left: 10px;
+    }
+
+    .server {
+        right: 70px;
+    }
+
+    .payment {
+        right: 15px;
+    }
+
+    .orderlistcontainer{
+        position: absolute;
+        top: 40%;
+        right: 4%;
+        width:29.7%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

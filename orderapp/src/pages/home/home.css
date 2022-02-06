@@ -43,6 +43,7 @@
     .image-banner {
         width: 300px;
         height: 300px;
+        margin-top: 30px;
     }
 
     .image-banner img {
@@ -52,7 +53,23 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .promotion-header {
+        font-size: 26px;
+    }
 
+    .promotion-detail {
+        font-size: 28px;
+    }
+
+    .image-banner {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .image-banner img {
+        height: 250px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
