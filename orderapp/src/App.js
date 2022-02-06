@@ -11,6 +11,7 @@ import Footer from './parts/footer';
 import Header from './parts/header';
 import Payment from './parts/payment';
 import Server from './parts/server';
+import Membership from './parts/membership.js';
 
 import CartItems from './components/CartItems';
 import OrderlistSendBtn from './components/OrderlistSendBtn';
@@ -91,6 +92,7 @@ function App() {
             <Link to="/pages/dessert"><button onClick={()=> {setPageState("Desserts")}} className={pageState === "Desserts"? "selected-page" : "pages"}>Desserts</button></Link>
             <span className='server'><Server /></span>
             <span className='payment'><Payment /></span>
+            <span className='signup'><Membership/></span>
           </div>
           <div className='menuitemcontainer'>
             <Switch>
