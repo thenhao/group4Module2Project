@@ -1,4 +1,5 @@
 import './server.css';
+import BellImg from '../assets/bell.png';
 
 export default function Server() {
     const handleServer = () => {
@@ -7,7 +8,7 @@ export default function Server() {
     }
 
     return (
-        <img src="https://icons-for-free.com/iconfiles/png/512/bell-131965017347068855.png" 
+        <img src={BellImg} 
             alt="payment icon" 
             style={{height: 45, width: 40}}
             onClick={handleServer} />

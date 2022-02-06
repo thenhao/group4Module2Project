@@ -1,4 +1,5 @@
 import './payment.css';
+import BillImg from '../assets/bill.png';
 
 export default function Payment() {
     const handlePayment = () => {
@@ -7,9 +8,9 @@ export default function Payment() {
     }
 
     return (
-        <img src="https://icons-for-free.com/iconfiles/png/512/dollar+funds+hand+payment+icon+icon-1320086640827007356.png" 
+        <img src={BillImg} 
             alt="payment icon" 
-            style={{height: 40, width: 40}}
+            style={{height: 45, width: 45}}
             onClick={handlePayment} />
     )
 }
