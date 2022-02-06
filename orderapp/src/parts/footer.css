@@ -4,6 +4,7 @@
 
 #fb-img, #instagram-img, #twitter-img, #telegram-img {
   width: 35px;
+  height: 35px;
   padding: 20px;
 }
 
