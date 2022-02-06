@@ -33,7 +33,7 @@
 
 .my-order-button {
     display: none;
-    width: 70px;
+    width: 73px;
     height: 20px;
     position: absolute;
     top: 20px;
@@ -41,7 +41,6 @@
     background-color: aquamarine;
     border: 1px solid grey;
     border-radius: 5px;
-    text-align: center;
 }
 
 .toggleMenu {
@@ -192,7 +191,7 @@
     }
 
     .navbar {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 60px;
@@ -207,7 +206,7 @@
     }
 
     .orderlistcontainer {
-        display: block;
+        display: none;
         z-index: 1;
         background-color: white;
         opacity: 95%;

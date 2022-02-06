@@ -90,7 +90,7 @@ function App() {
       </div>
       <div className='navbarcontainer'>
         <Router>
-          <div className="navbar" style={{display ? "none" : "flex"}}>
+          <div className="navbar">
             <Link to="/"><button onClick={()=> {setPageState("Home")}} className={pageState === "Home"? "selected-page" : "pages"}>Home</button></Link>
             <Link to="/pages/appetizer"><button onClick={()=> {setPageState("Appetizers")}} className={pageState === "Appetizers"? "selected-page" : "pages"}>Appetizers</button></Link>
             <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
@@ -114,7 +114,7 @@ function App() {
           </div>
         </Router>
       </div>
-      <div className='orderlistcontainer' style={{display ? "none" : "block"}}>
+      <div className='orderlistcontainer'>
         <div className='order'>
           <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>  
           <TotalBillCalculator selectedItemList={selectedItemList} />              
