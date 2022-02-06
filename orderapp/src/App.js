@@ -77,6 +77,9 @@ function App() {
 
   return (
     <>
+      <div className="my-order">
+        <button className="my-order-button">My Order</button>
+      </div>
       <div className="toggleMenu">
         <span className="bar"></span>
         <span className="bar"></span>
