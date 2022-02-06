@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './TotalBillCalculator.css';
 
 function TotalBillCalculator(props) {
 
@@ -14,7 +15,7 @@ function TotalBillCalculator(props) {
     return null;
   }
   else {
-    return <p>Total Bill (inclusive of 7% GST): ${finalBill}</p>;
+    return <p className='total-bill'>Total Bill (inclusive of 7% GST): ${finalBill}</p>;
   }
 }
 
