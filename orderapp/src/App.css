@@ -11,7 +11,7 @@
     position: absolute;
     top: 2%;
     right: 1%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -107,8 +107,17 @@
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    * {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
     .toggleMenu {
         display: flex;
+        position: relative;
+        top: 0;
+        left: 180px;
+        margin-bottom: -15px;
     }
 }
 
@@ -119,25 +128,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .header{
-        height: 150px;
-    }
-    
-    .navbar{
-        height: 60px;
-    }
-    
-    .menu{
-        height: 680px;
-    }
 
-    .order{
-        height: 680px;
-    }
-    
-    .footer{
-        height: 120px;
-    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

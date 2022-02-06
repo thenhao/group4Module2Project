@@ -77,13 +77,13 @@ function App() {
 
   return (
     <>
-      <div className="header">
-        <Header/>
-      </div>
       <div className="toggleMenu">
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
+      </div>
+      <div className="header">
+        <Header/>
       </div>
       <div className='navbarcontainer'>
         <Router>
