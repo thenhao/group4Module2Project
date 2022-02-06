@@ -9,12 +9,13 @@ function AddedItem(item, selectedItemList, setSelectedItemList) {
       return false;
     }
   });
-
+console.log('result is', result);
   if(result === undefined) {
     newSelectedItemList.push(item);
   }
   else {
-    result.quantity = item.quantity;
+    //edited code to ensure sum is added from menucomponent side
+    result.quantity += item.quantity;
   }
   setSelectedItemList(newSelectedItemList);
 }
