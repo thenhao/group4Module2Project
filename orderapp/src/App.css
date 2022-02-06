@@ -2,8 +2,15 @@
     width:200px;
 } */
 
+body {
+    margin: 0;
+}
+
+#root {
+    background-color: black;
+}
+
 .header{
-    height: 150px;
     text-align: center;
 }
 
@@ -15,6 +22,8 @@
 
 .navbar{
     margin: 0 auto;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
 }
 
 .pages {
@@ -24,6 +33,8 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
+    background-color: black;
+    color: white;
 }
 
 
@@ -34,11 +45,12 @@
 
 .selected-page {
     border: none;
-    background-color: white;
     padding: 10px 40px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
+    background-color: black;
+    color: white;
 }
 
 .selected-page:hover, .selected-page:before, .selected-page:after {
@@ -86,7 +98,7 @@
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .header{
-        height: 150px;
+        height: 200px;
     }
     
     .navbar{
