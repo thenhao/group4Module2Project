@@ -7,25 +7,25 @@ import AddToCartItems from './OrderlistContainer'
 //OnClick Send Button, a Popup will appear using modal
 
 
-function OrderlistSendBtn () {
+function OrderlistSendBtn (props) {
     const [buttonPopup, setButtonPopup] = useState(false);
 
-    return (
-        <div className="sendbtn">
-            <main>
-                <button onClick={() => setButtonPopup(true)}>Send Order List</button>
-                
-            </main>
-{/* Create a trigger={} to allow a function that trigger useState */}
-            <OrderlistPopUp trigger={buttonPopup} setTrigger={setButtonPopup}>
-            </OrderlistPopUp>
-        </div>
-
-
-    )
-
-
-
+    //if-else statement to show button when cart is filled and disappear when cart is empty
+    if(props.selectedItemList.length === 0) {
+      return null;
+    }
+    else {
+      return (
+        <>
+          <div className="sendbtn-container">
+            <button id='sendorderbtn' onClick={() => setButtonPopup(true)}>Send Order</button>
+          </div>
+  
+          {/* Create a trigger={} to allow a function that trigger useState */}
+          <OrderlistPopUp trigger={buttonPopup} setTrigger={setButtonPopup}/>
+        </>
+      )
+    }  
 }
 
 export default OrderlistSendBtn;

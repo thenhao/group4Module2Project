@@ -6,36 +6,39 @@
     /* width: fit-content;
     height:fit-content; */
     width:200px;
-    height:200px;
+    height: 200px;
+    border-radius: 10%;
 }
 
 .itemcomponent{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:215px;
+    width:250px;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
-    border: 1px solid black;
+    margin: 10px;
     padding: 10px;
+    color: white;
 }
 
 .item-desc-container{
     text-align: center;
     width: 180px;
-    height:36px;
-    font-family:'Calligraffitti', cursive;
+    height:60px;
+    font-family:'Yomogi', cursive;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .quantity-container{
     text-align: center;
 }
 
-.minusbutton .plusbutton{
+.minusbutton
+.plusbutton {
     width:50px;
 }
 

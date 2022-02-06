@@ -1,9 +1,22 @@
-import React from "React";
+import React, { useState, useEffect } from "react";
+import './TotalBillCalculator.css';
 
-const TotalBillCalculator = (props) => {
-  //clarify the data structure that is being passed
+function TotalBillCalculator(props) {
 
-  return <div></div>;
-};
+  let totalBill = 0;
+  for (const element of props.selectedItemList) {
+    totalBill = (totalBill + element.price * element.quantity) * 1.07;
+  }
+  let finalBill = Math.round(totalBill * 100) / 100;
+
+  // if-else statement to show total bill when cart is filled and disappears when cart is empty
+
+  if(props.selectedItemList.length === 0) {
+    return null;
+  }
+  else {
+    return <p className='total-bill'>Total Bill (inclusive of 7% GST): ${finalBill}</p>;
+  }
+}
 
 export default TotalBillCalculator;
