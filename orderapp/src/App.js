@@ -102,7 +102,7 @@ function App() {
               <Route path="/pages/beverage"><Beverage data={menu} addtocart={AddItemToCart} type={CategoryData[2]}/></Route>
               <Route path="/pages/dessert"><Dessert data={menu} addtocart={AddItemToCart} type={CategoryData[3]}/></Route>
             </Switch>
-             {/* <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/> */}
+             
           </div>
         </Router>
         <div className='orderlistcontainer'>

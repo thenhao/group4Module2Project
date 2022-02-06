@@ -1,0 +1,42 @@
+.carouselimagecontainer{
+     /* width: 1421px;
+     height:699px;  */
+ }
+ 
+ .carousel .thumb{
+     width:0px;
+     height: 0px;
+     padding: 0px;
+     margin: 0px;
+     border: 0px solid white;
+ }
+ 
+ .carousel .thumb.selected{
+     width:0px;
+     height: 0px;
+     padding: 0px;
+     margin: 0px;
+     border: 0px solid white;
+ }
+ 
+ .thumbs-wrapper.axis-vertical{
+     width:0px;
+     height: 0px;
+     padding: 0px;
+     margin: 0px;
+ }
+ 
+ .carouselcontainer{
+     width: 1421px;
+     /* height: 450px; */
+ }
+ 
+ .slide.selected{
+     width: 450px;
+     height: 450px;
+ }
+ 
+ .slide.previous{
+     width: 450px;
+     height: 450px;
+ }
