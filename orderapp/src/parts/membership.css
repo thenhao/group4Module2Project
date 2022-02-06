@@ -19,13 +19,12 @@
     height: 60px;
     width: 50px;
     position: absolute;
-    right: 145px;
+    right: 230px;
     
 }
 
 .imageicon {
-    padding: 5px;
-    padding-top: 13px;
+    padding-top: 3px;
 }
 
 .formcontainer{
