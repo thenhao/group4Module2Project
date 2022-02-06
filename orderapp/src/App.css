@@ -1,7 +1,3 @@
-/* #image{
-    width:200px;
-} */
-
 .server {
     height: 60px;
     width: 50px;
@@ -141,6 +137,9 @@
 
 .footer{
     height: 120px;
+    position: relative;
+    bottom: 5%;
+    left: 0;
 }
 
 .orderTitle {
@@ -239,28 +238,108 @@
     }
 
     .payment {
-        right: 15px;
+        right: 25px;
     }
 
     .orderlistcontainer{
         position: absolute;
         top: 40%;
-        right: 4%;
+        right: 5%;
         width:29.7%;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .selected-page,
+    .pages {
+        padding: 10px 15px;
+    }
 
+    .navbar {
+        margin-left: 40px;
+    }
+
+    .server {
+        right: 80px;
+    }
+
+    .payment {
+        right: 25px;
+    }
+
+    .orderlistcontainer{
+        position: absolute;
+        top: 20vh;
+        right: 1%;
+        width:29.7%;
+    }
+
+    .footer {
+        position: relative;
+        bottom: 5%;
+        left: 0;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .selected-page,
+    .pages {
+        padding: 10px 30px;
+    }
 
+    .navbar {
+        margin-left: 50px;
+    }
+    
+    .orderlistcontainer{
+        position: absolute;
+        top: 35vh;
+        right: 0;
+        width:29.7%;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .server {
+        right: 90px;
+    }
+    
+    .payment {
+        right: 20px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .selected-page,
+    .pages {
+        padding: 10px 60px;
+    }
 
+    .navbar {
+        margin-left: 90px;
+    }
+    
+    .orderlistcontainer{
+        position: absolute;
+        top: 30vh;
+        right: 0;
+        width:29.7%;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .server {
+        right: 100px;
+    }
+    
+    .payment {
+        right: 30px;
+    }
 }
