@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import MemberPopup from '../components/popup/memberpopup';
 import "./membership.css";
+import signupicon from '../assets/signup.png';
 
 function Membership(){
     const form = useRef();
@@ -31,9 +32,9 @@ function Membership(){
     
     return <div>
 
-        <img className='imageicon' src="https://www.clipartmax.com/png/full/437-4379862_signup-icon-signup-sign-up-icon.png" 
+        <img className='imageicon' src={signupicon} 
             alt="sign up icon" 
-            style={{height: 30, width: 40}}
+            style={{height: 50, width: 50}}
             onClick={togglePopup} />
         
         {isOpen && <MemberPopup
