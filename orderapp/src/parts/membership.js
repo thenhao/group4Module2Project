@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import MemberPopup from '../components/popup/memberpopup';
+import Popup from '../components/popup/popup';
 import "./membership.css";
-import signupicon from '../assets/signup.png';
+import signupicon from '../assets/sign-up.png';
 
 function Membership(){
     const form = useRef();
@@ -34,10 +34,11 @@ function Membership(){
 
         <img className='imageicon' src={signupicon} 
             alt="sign up icon" 
-            style={{height: 50, width: 50}}
+            style={{height: 35, width: 35}}
             onClick={togglePopup} />
         
-        {isOpen && <MemberPopup
+        {isOpen && <Popup
+        popupType='member-popup'
         content={<>
             <div className='signupcontainer'>
                 <div className='formcontainer'>
@@ -46,7 +47,7 @@ function Membership(){
                     <br></br>
                     <form className='inputform' ref={form} onSubmit={handlesubmit}>
                         
-                        <input className='inputvalue' type="text" placeholder="Your Username" name="username" size="50"></input>
+                        <input className='inputvalue' type="text" placeholder="Your Username" name="username" size="50" autofocus></input>
                         
                         <input className='inputvalue' type="password" placeholder="Your Password" name="password" size="50"></input>
                         <input className='inputvalue' type="text" placeholder="Your Firstname" name="firstname" size="50"></input>
@@ -59,7 +60,7 @@ function Membership(){
                             </div>
 
                             <div className='agreement'>
-                                I dont want to receive promotional emails from Ambrosial
+                                I <strong>do not</strong> want to receive promotional emails from Ambrosial
                             </div>      
                         </div>
                         <br></br>
