@@ -10,10 +10,10 @@
    
   .box {
     position: relative;
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
     height: auto;
-    max-height: 80vh;
+    max-height: 90vh;
     margin-top: calc(100vh - 85vh - 20px);
     background: #fff;
     border-radius: 4px;
@@ -26,7 +26,7 @@
     content: 'x';
     cursor: pointer;
     position: fixed;
-    right: calc(15% - 30px);
+    right: calc(15% + 390px);
     top: calc(100vh - 85vh - 33px);
     background: #ededed;
     width: 25px;

@@ -7,10 +7,10 @@ import "./membership.css";
 function Membership(){
     const form = useRef();
         //list of things that need to have the tags
-        // Form
-        // -reply_to
-        // -name or firstname/lastname
-        // -button to submit
+        //Form
+        //-reply_to
+        //-name or firstname/lastname
+        //-button to submit
 
     function handlesubmit(e){
         e.preventDefault();
@@ -33,7 +33,7 @@ function Membership(){
 
         <img className='imageicon' src="https://www.clipartmax.com/png/full/437-4379862_signup-icon-signup-sign-up-icon.png" 
             alt="sign up icon" 
-            style={{height: 35, width: 40}}
+            style={{height: 30, width: 40}}
             onClick={togglePopup} />
         
         {isOpen && <MemberPopup
@@ -43,23 +43,24 @@ function Membership(){
                     <div className='signuptitle'>Ambrosial</div>
                     <div className='signupsubtitle'>Create an account</div>
                     <br></br>
-                    <form ref={form} onSubmit={handlesubmit}>
+                    <form className='inputform' ref={form} onSubmit={handlesubmit}>
                         
                         <input className='inputvalue' type="text" placeholder="Your Username" name="username" size="50"></input>
-                        <br></br><br></br>
-                        <br></br>
-                        <input className='inputvalue' type="text" placeholder="Your Password" name="password" size="50"></input>
-                        <br></br><br></br>
-                        <br></br>
+                        
+                        <input className='inputvalue' type="password" placeholder="Your Password" name="password" size="50"></input>
                         <input className='inputvalue' type="text" placeholder="Your Firstname" name="firstname" size="50"></input>
-                        <br></br><br></br>
-                        <br></br>
                         <input className='inputvalue' type="text" placeholder="Your Lastname" name="lastname" size="50"></input>
-                        <br></br><br></br>
-                        <br></br>
                         <input className='inputvalue' type="email" placeholder="Your Email" name="reply_to" size="50"></input>
-                        <br></br>
-                        <div className='inputcheckboxcontainer'><input className='inputcheckbox' type="checkbox"></input>I dont want to receive promotional emails from Ambrosial</div>
+                        
+                        <div className='inputcheckboxcontainer'>
+                            <div className='inputcheckboxwrapper'>
+                                <input className='inputcheckbox' type="checkbox"></input>
+                            </div>
+
+                            <div className='agreement'>
+                                I dont want to receive promotional emails from Ambrosial
+                            </div>      
+                        </div>
                         <br></br>
                         <div className='signupagreement'>By clicking the "Sign Up" button, you are creating an Ambrosial account, and you agree 
                             to Ambrosial's Terms of Use and Privacy Policy</div>
@@ -67,10 +68,6 @@ function Membership(){
                         <button className='signupbutton'>Sign Up</button>
                     </form>
                 </div>
-
-                {/* <div className='signupimagecontainer'>
-                    <img className='signupimage' src='https://i.pinimg.com/564x/7f/46/01/7f4601590ac18fa36848098624ba9dfe.jpg'></img>
-                </div> */}
 
             </div>
         </>}

@@ -3,6 +3,8 @@
     font-weight: bold;
     font-size: 70px;
     text-align: center;
+    margin-top: 20px;
+    padding-right: 33px;
 }
 
 .signupsubtitle{
@@ -10,6 +12,7 @@
     font-weight: bold;
     font-family: 'Yomogi', cursive;
     text-align: center;
+    padding-right: 20px;
 }
 
 .signup {
@@ -22,43 +25,58 @@
 
 .imageicon {
     padding: 5px;
-    padding-top: 10px;
+    padding-top: 13px;
 }
 
 .formcontainer{
-    
+
     width:50%;
 }
 
 .inputvalue{
     line-height: 30px;
-    margin-left: 65px;
+    margin-left: 115px;
+    margin-bottom: 20px;
 }
 
 .inputcheckbox{
-    
-    margin-left: 65px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    padding-top: 13px;
+    margin:0px;
 }
 
-.inputcheckboxcontainer{
+.inputcheckboxwrapper{
+    height: 14px;
+    width: 14px;
+    padding-top: 2px;
+    /* justify-items: center;
     justify-content: center;
     align-content: center;
     align-items: center;
-    justify-items: center;
+    align-self: center; */
+}
+
+.agreement{
+    width:370px;
+    margin-left: 5px;
+}
+
+.inputcheckboxcontainer{
+    align-self: auto;
+    margin-left: 115px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .signupagreement{
     width:370px;
-    margin-left: 65px;
+    margin-left: 115px;
+    margin-bottom: 20px;
 }
 
 .signupbutton{
     width:370px;
-    margin-left: 65px;
+    margin-left: 115px;
+    margin-bottom: 10px;
     height:30px;
 }
 .signupimagecontainer{
@@ -77,4 +95,9 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.formcontainer{   
+    width:609px;
+    height:639px;
 }
