@@ -80,7 +80,11 @@ function App() {
       <div className="header">
         <Header/>
       </div>
-
+      <div className="toggleMenu">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
       <div className='navbarcontainer'>
         <Router>
           <div className="navbar">
@@ -103,12 +107,12 @@ function App() {
              {/* <MenuitemContainer className="maincontainer" itemData={menu} addtocart={AddItemToCart}/> */}
           </div>
         </Router>
-        <div className='orderlistcontainer'>
-          <div className='order'>
-            <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>  
-            <TotalBillCalculator selectedItemList={selectedItemList} />              
-            <OrderlistSendBtn selectedItemList={selectedItemList}/>
-          </div>
+      </div>
+      <div className='orderlistcontainer'>
+        <div className='order'>
+          <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>  
+          <TotalBillCalculator selectedItemList={selectedItemList} />              
+          <OrderlistSendBtn selectedItemList={selectedItemList}/>
         </div>
       </div>
 
