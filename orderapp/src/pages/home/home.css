@@ -2,20 +2,23 @@
     text-align: center;
     font-family: "Vibur",cursive;
     font-size: 45px;
+    color: white;
 }
 
 .promotion {
     text-align: center;
-    font-family: "Vibur",cursive;
+    font-family: "Calligraffitti",cursive;
     font-size: 35px;
     font-weight: bold;
     margin: 0;
     padding-bottom: 20px;
+    color: white;
 }
 
 .image-banner {
     display: block;
     margin: 0 auto;
+    margin-bottom: 20px;
     width: 450px;
     height: 450px;
     border-radius: 50%;
