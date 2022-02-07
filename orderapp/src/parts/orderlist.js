@@ -7,6 +7,7 @@ import TotalBillCalculator from '../components/TotalBillCalculator';
 import OrderlistSendBtn from '../components/OrderlistSendBtn';
 
 import './orderlist.css';
+import Trialemail from '../components/trialemail';
 
 function OrderList(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,7 @@ function OrderList(props) {
           <CartItems selectedItemList={props.selectedItemList} setSelectedItemList={props.setSelectedItemList}/>
           <TotalBillCalculator selectedItemList={props.selectedItemList} />              
           <OrderlistSendBtn selectedItemList={props.selectedItemList}/>
+          <Trialemail selectedItemList={props.selectedItemList}/>
         </>
       }/>}
     </>);
