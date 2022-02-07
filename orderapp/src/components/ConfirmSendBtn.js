@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import './ConfirmSendBtn.css';
 
 export default function ConfirmedOrder() {
   
@@ -20,7 +21,7 @@ export default function ConfirmedOrder() {
       <input type="text" name="user_name" />
       <label>Quantity</label>
       <label>Price</label> */}
-      <input type="submit" value="Confirm Send" />
+      <input className="confirm-send-btn" type="submit" value="Confirm Send" />
     </form>
   );
 };
