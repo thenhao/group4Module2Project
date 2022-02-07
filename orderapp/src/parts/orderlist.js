@@ -15,12 +15,23 @@ function OrderList(props) {
     setIsOpen(!isOpen);
   }
 
+  function updateQuantityHandler() {
+    let totalQuantity = 0;
+    for (let i = 0; i < props.selectedItemList.length; i++){
+      totalQuantity += props.selectedItemList[i].quantity;
+      console.log(totalQuantity);
+    }
+    return totalQuantity;
+  }
+
   return(
     <>
       <img src={AddToCartImg} 
         alt="cart icon" 
         style={{height: 35, width: 35}}
-        onClick={togglePopup} />
+        onClick={togglePopup}/>
+
+      <div className="quantityUpdater">{updateQuantityHandler()}</div>
         
       {isOpen && <Popup 
       popupType='orderlist-popup' 
