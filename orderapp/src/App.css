@@ -226,7 +226,7 @@
         border: 1px solid grey;
         border-radius: 5px;
         background-color: white;
-        position: absolute;
+        position: relative;
         top: 50px;
         right: 60px;
         width: 250px;
@@ -258,13 +258,6 @@
     .payment {
         right: 25px;
     }
-
-    .orderlistcontainer{
-        position: absolute;
-        top: 40%;
-        right: 5%;
-        width:29.7%;
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -286,13 +279,6 @@
         right: 25px;
     }
 
-    .orderlistcontainer{
-        position: absolute;
-        top: 20vh;
-        right: 1%;
-        width:29.7%;
-    }
-
     .footer {
         position: relative;
         bottom: 5%;
@@ -309,13 +295,6 @@
 
     .navbar {
         margin-left: 40px;
-    }
-    
-    .orderlistcontainer{
-        position: absolute;
-        top: 35vh;
-        right: 0;
-        width:29.7%;
     }
 
     .footer {
@@ -340,13 +319,6 @@
 
     .navbar {
         margin-left: 80px;
-    }
-    
-    .orderlistcontainer{
-        position: absolute;
-        top: 30vh;
-        right: 0;
-        width:29.7%;
     }
 
     .footer {
