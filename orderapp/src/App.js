@@ -97,24 +97,18 @@ function App() {
       </div>
       <div className='navbarcontainer'>
         <Router>
-          <div className={show ? "navbar active" : "navbar"}>
+          {/* <div className={show ? "navbar active" : "navbar"}> */}
+          <div className="navbar">
             <Link to="/"><button onClick={()=> {setPageState("Home")}} className={pageState === "Home"? "selected-page" : "pages"}>Home</button></Link>
             <Link to="/pages/appetizer"><button onClick={()=> {setPageState("Appetizers")}} className={pageState === "Appetizers"? "selected-page" : "pages"}>Appetizers</button></Link>
             <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
             <Link to="/pages/beverage"><button onClick={()=> {setPageState("Beverages")}} className={pageState === "Beverages"? "selected-page" : "pages"}>Beverages</button></Link>
             <Link to="/pages/dessert"><button onClick={()=> {setPageState("Desserts")}} className={pageState === "Desserts"? "selected-page" : "pages"}>Desserts</button></Link>
-<<<<<<< HEAD
-            <div className="services">
-              <span className='server'><Server /></span>
-              <span className='payment'><Payment /></span>
-            </div>
-=======
             <span className='orderlist'><OrderList selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/></span>
             <span className='signup'><Membership/></span>
             <span className='server'><Server /></span>
             <span className='payment'><Payment /></span>
             {/* <span className='signin'><SignIn/></span> */}
->>>>>>> main
           </div>
           
           <div className='menuitemcontainer'>
@@ -128,15 +122,15 @@ function App() {
              
           </div>
         </Router>
-<<<<<<< HEAD
-      </div>
-      <div className={list ? "orderlistcontainer active" : "orderlistcontainer"}>
-        <div className='order'>
-          <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>  
-          <TotalBillCalculator selectedItemList={selectedItemList} />              
-          <OrderlistSendBtn selectedItemList={selectedItemList}/>
-        </div>
-=======
+
+      {/* // </div>
+      // <div className={list ? "orderlistcontainer active" : "orderlistcontainer"}>
+      //   <div className='order'>
+      //     <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>  
+      //     <TotalBillCalculator selectedItemList={selectedItemList} />              
+      //     <OrderlistSendBtn selectedItemList={selectedItemList}/>
+      //   </div> */}
+
         {/* <div className='orderlistcontainer'>
           <div className='order'>
             <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>  
@@ -144,7 +138,6 @@ function App() {
             <OrderlistSendBtn selectedItemList={selectedItemList}/>
           </div>
         </div> */}
->>>>>>> main
       </div>
 
           
