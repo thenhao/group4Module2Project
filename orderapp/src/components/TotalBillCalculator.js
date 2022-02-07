@@ -15,7 +15,7 @@ function TotalBillCalculator(props) {
     return null;
   }
   else {
-    return <p className='total-bill'>Total Bill (inclusive of 7% GST): ${finalBill}</p>;
+    return <p className='total-bill'>Total Bill (inclusive of 7% GST): ${finalBill.toFixed(2)}</p>;
   }
 }
 
