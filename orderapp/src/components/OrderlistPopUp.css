@@ -1,29 +1,25 @@
 .orderlist-popup {
     position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: auto;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-
-    /* Need to display a table of the items ordered */
-    /* To determine if use flex/ grid/ table */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index:1000;
 }
 
 .popup-page {
-    z-index:9999; 
-    overflow:scroll;
     position: relative;
-    border-radius: 10px;
-    padding: 30px;
-    width: 75%;
-    height: 300px;
-    max-width: 600px;
-    background-color: #FFF;
-    overflow-x: hidden;
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 90vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    /* padding: 20px; */
+    border: 1px solid #999;
+    overflow: auto;
 }
 
 
@@ -48,45 +44,57 @@
     left: 10%;
 }
 
-.popupTitle,
-td {
+.popupTitle {
     text-align: center;
-  }
+    font-family:"Vibur", cursive;
+}
 
-  th {
-      padding: 0 50px;
-  }
+th {
+    padding: 0 50px;
+    font-family: "Yomogi", cursive;
+    font-weight: bold;
+}
 
-  .close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      border: none;
-      background-color: white;
-  }
+.close {
+  border: none;
+  background: transparent;
+  content: 'x';
+  position: fixed;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  right: 30%;
+  border-radius: 50%;
+  line-height: 25px;
+  text-align: center;
+  font-family: "Yomogi", cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
 
-  .close:hover,
-  .amend-btn:hover,
-  .confirm-send-btn:hover {
-      cursor:pointer;
-      font-weight: bold;
-  }
+.close:hover {
+    font-size:35px;
+}
 
-.amend-btn {
-    position: relative;
+.amend-btn:hover {
+    cursor:pointer;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
     justify-content: center;
+    padding-top: 50px;
+}
+.amend-btn {
     padding: 10px;
     max-width: 150px;
-    margin: 80px 20px 0 180px;
     background-color: rgb(240, 240, 240);
 }
 
-.confirm-send-btn {
-    position: relative;
-    justify-content: center;
-    padding: 10px;
-    max-width: 150px;
-    margin: 80px 20px 0 10px;
-    background-color: rgb(240, 240, 240);
-
+.amend-btn:hover {
+    cursor:pointer;
+    font-weight: bold;
 }
