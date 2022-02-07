@@ -6,6 +6,9 @@ import "../../components/carousel/Carousel.css"
 
 
 export default function Home() {
+
+ 
+  
   
   return (  
       <Carousel className="carouselcontainer" autoPlay infiniteLoop showArrows="true" showThumbs="false" thumbWidth={0}>

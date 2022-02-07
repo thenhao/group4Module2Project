@@ -1,68 +1,6 @@
-.server {
-    height: 60px;
-    width: 50px;
-    position: absolute;
-    right: 80px;
-}
-
-.payment {
-    height: 60px;
-    width: 50px;
-    position: absolute;
-    right: 10px;
-}
-
-.server img,
-.payment img {
-    padding: 5px;
-}
-
-.server img:hover,
-.payment img:hover {
-    cursor: pointer;
-}
-
-.services {
-    position: absolute;
-    top: 160px;
-    right: 0;
-}
-
-.my-order-button {
-    display: none;
-    width: 73px;
-    height: 20px;
-    position: absolute;
-    top: 20px;
-    right: 60px;
-    background-color: aquamarine;
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-
-.toggleMenu {
-    position: absolute;
-    top: 2%;
-    right: 1%;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 20px;
-    z-index: 1;
-}
-
-.toggleMenu:hover {
-    cursor: pointer;
-}
-
-.bar {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
-/* <==!==> */
+/* #image{
+    width:200px;
+} */
 
 body {
     margin: 0;
@@ -108,7 +46,7 @@ body {
 }
 
 .navbarcontainer{
-    display: flex;
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -172,9 +110,6 @@ body {
 }
 
 .orderlistcontainer{
-    position: absolute;
-    top: 40vh;
-    right: 0;
     width:29.7%;
 }
 
@@ -185,167 +120,11 @@ body {
 
 .footer{
     height: 120px;
-    position: relative;
-    bottom: 5%;
-    left: 0;
 }
 
 .orderTitle {
     text-align: center;
 }
-
-  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-    .header {
-        height: 200px;
-        margin-top: 60px;
-    }    
-    
-    .services {
-        position: relative;
-        top: 0;
-        left: -20%;
-    }
-
-    .server {
-        height: 10px;
-        width: 20px;
-        position: absolute;
-        right: 100px;
-    }
-
-    .payment {
-        height: 5px;
-        width: 20px;
-        position: absolute;
-        right: 50px;
-    }
-
-    .my-order-button {
-        display: flex;
-        position: absolute;
-        top: 5%;
-        right: 18%;
-    }
-    
-    .toggleMenu {
-        display: flex;
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        margin-bottom: -15px;
-    }
-
-    .navbarcontainer {
-        margin-top: -100px;
-    }
-
-    .navbar {
-        display: none;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-bottom: 60px;
-        transition: 350ms;
-    }
-
-    .navbar.active {
-        display: flex;
-        transition: 350ms;
-    }
-
-    .navbar button {
-        width: 250px;
-    }
-
-    .menuitemcontainer {
-        width: 100vw;
-        margin-top: 20px;
-    }
-
-    .orderlistcontainer {
-        display: none;
-        transition: 350ms;
-        z-index: 1;
-        border: 1px solid grey;
-        border-radius: 5px;
-        background-color: white;
-        position: relative;
-        top: 50px;
-        right: 60px;
-        width: 250px;
-        height: 400px;
-        padding: 10px 20px;
-    }
-
-    .orderlistcontainer.active {
-        display: flex;
-        transition: 350ms;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .selected-page,
-    .pages {
-        padding: 10px 5px;
-    }
-
-    .navbar {
-        margin-left: 10px;
-    }
-
-    .server {
-        right: 70px;
-    }
-
-    .payment {
-        right: 25px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-<<<<<<< HEAD
-    .selected-page,
-    .pages {
-        padding: 10px 15px;
-=======
-    /* For desktop: */
-    /* .header{
-        height: 200px;
-    }
-    
-    .navbar{
-    
-        height: 60px;
-    }
-    
-    .menu{
-
-        height: 680px;
->>>>>>> main
-    }
-
-    .navbar {
-        margin-left: 40px;
-    }
-
-    .server {
-        right: 80px;
-    }
-
-    .payment {
-        right: 25px;
-    }
-
-    .footer {
-        position: relative;
-        bottom: 5%;
-        left: 0;
-    }
-} */ 
-
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -372,52 +151,4 @@ body {
     .footer{
         height: 120px;
     }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .selected-page,
-    .pages {
-        padding: 10px 30px;
-    }
-
-    .navbar {
-        margin-left: 40px;
-    }
-
-    .footer {
-        margin-top: 30px;
-    }
-
-    .server {
-        right: 90px;
-    }
-    
-    .payment {
-        right: 20px;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .selected-page,
-    .pages {
-        padding: 10px 50px;
-    }
-
-    .navbar {
-        margin-left: 80px;
-    }
-
-    .footer {
-        margin-top: 30px;
-    }
-
-    .server {
-        right: 100px;
-    }
-    
-    .payment {
-        right: 30px;
-    }
-}
+  }
