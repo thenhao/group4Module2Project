@@ -4,6 +4,7 @@
 
 #sendorderbtn {
   position: relative;
+  margin-bottom: 5px;
   top: 30px;
 }
 

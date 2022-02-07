@@ -16,11 +16,18 @@ export default function ConfirmedOrder() {
 
   return (
     <form onSubmit={sendEmail}>
-      {/* <label>Item</label>
-      <input type="text" name="user_name" />
-      <label>Quantity</label>
-      <label>Price</label> */}
-      <input type="submit" value="Confirm Send" />
+<tr>
+                            <td>
+                                {item.name}
+                            </td>
+                            <td>
+                                {item.quantity} 
+                            </td>
+                            <td>
+                                {item.price}
+                            </td>
+                        </tr>
+      {/* <input type="submit" value="Confirm Send" /> */}
     </form>
   );
 };
