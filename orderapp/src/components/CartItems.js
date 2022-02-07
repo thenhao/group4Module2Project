@@ -1,7 +1,43 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './CartItems.css';
 
 function CartItems(props) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_mbsyj9p', 'template_65mg3x8', form.current, 'user_QJAMnGLGMj3Gb8rV1nMXO')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  return (
+    <form ref={form} onSubmit={sendEmail}>
+      <tr>
+        <td className='table-content'>{obj.name}</td>
+        <td className='table-content'>
+          <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '-')}>-</button>
+          <input className="quantityDisplay" type='text' inputMode='numeric' value={obj.quantity}/>
+          <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '+')}>+</button>
+        </td>
+        <td className='table-content'>
+          ${(obj.price*obj.quantity).toFixed(2)}
+        </td>
+      </tr>
+    </form>
+  );
+}
+
+
+
+
+
+/*function CartItems(props) {
 
   let selectedItemList = props.selectedItemList;
   let setSelectedItemList = props.setSelectedItemList;
@@ -83,4 +119,4 @@ function CartItems(props) {
   
 }
 
-export default CartItems;
+export default CartItems;*/
