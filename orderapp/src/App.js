@@ -75,23 +75,17 @@ function App() {
   const [pageState, setPageState] = useState('');
 
   // responsive design
-  const [show, setShow] = useState('');
-  const handleClick = () => {
-    
-    setShow(!show)
-  }
-
-  useEffect(() => {
-
-  }, [show])
-  
+  const [show, setShow] = useState(false);
+  const handleMenu = () => setShow(!show)
+  const [list, setList] = useState(false);
+  const handleClick = () => setList(!list);
 
   return (
     <>
       <div className="my-order">
         <button className="my-order-button" onClick={handleClick}>My Order</button>
       </div>
-      <div className="toggleMenu" onClick={handleClick}>
+      <div className="toggleMenu" onClick={handleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
@@ -101,7 +95,7 @@ function App() {
       </div>
       <div className='navbarcontainer'>
         <Router>
-          <div className="navbar">
+          <div className={show ? "navbar active" : "navbar"}>
             <Link to="/"><button onClick={()=> {setPageState("Home")}} className={pageState === "Home"? "selected-page" : "pages"}>Home</button></Link>
             <Link to="/pages/appetizer"><button onClick={()=> {setPageState("Appetizers")}} className={pageState === "Appetizers"? "selected-page" : "pages"}>Appetizers</button></Link>
             <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
@@ -125,7 +119,7 @@ function App() {
           </div>
         </Router>
       </div>
-      <div className='orderlistcontainer'>
+      <div className={list ? "orderlistcontainer active" : "orderlistcontainer"}>
         <div className='order'>
           <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>  
           <TotalBillCalculator selectedItemList={selectedItemList} />              

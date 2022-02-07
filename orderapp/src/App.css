@@ -202,6 +202,12 @@
         flex-wrap: wrap;
         flex-direction: column;
         margin-bottom: 60px;
+        transition: 350ms;
+    }
+
+    .navbar.active {
+        display: flex;
+        transition: 350ms;
     }
 
     .navbar button {
@@ -215,6 +221,7 @@
 
     .orderlistcontainer {
         display: none;
+        transition: 350ms;
         z-index: 1;
         border: 1px solid grey;
         border-radius: 5px;
@@ -225,6 +232,11 @@
         width: 250px;
         height: 400px;
         padding: 10px 20px;
+    }
+
+    .orderlistcontainer.active {
+        display: flex;
+        transition: 350ms;
     }
 }
 
