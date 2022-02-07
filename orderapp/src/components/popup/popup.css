@@ -1,0 +1,112 @@
+/* Popup style */
+.member-popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index:1000;
+  }
+   
+  .member-box {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 90vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    /* padding: 20px; */
+    border: 1px solid #999;
+    overflow: auto;
+  }
+   
+  .server-popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index:1000;
+  }
+   
+  .server-box {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 90vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    /* padding: 20px; */
+    border: 1px solid #999;
+    overflow: auto;
+  }
+
+  .payment-popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index:1000;
+  }
+   
+  .payment-box {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 90vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    /* padding: 20px; */
+    border: 1px solid #999;
+    overflow: auto;
+  }
+
+  .orderlist-popup-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index:1000;
+  }
+   
+  .orderlist-box {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    height: 300px;
+    max-height: 90vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    /* padding: 20px; */
+    border: 1px solid #999;
+    overflow: auto;
+  }
+
+  .member-close-icon, .server-close-icon, .payment-close-icon, .orderlist-close-icon{
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(15% + 210px);
+    top: calc(100vh - 85vh - 33px);
+    background: #ededed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 25px;
+    text-align: center;
+    border: 3px solid #999;
+    font-size: 30px;
+  }
