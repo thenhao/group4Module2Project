@@ -3,10 +3,20 @@
 } */
 
 body {
+    background: url('./assets/background.jpg');
+    background-size: auto;
+    background-position: fixed;
     margin: 0;
+}
+
+.background-opacity{
+    background-color: rgba(0 ,0 ,0 ,0.8);
+    padding-bottom: 50px;
+}
+
+.ingress{
     -webkit-animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    background-color: black;
 }
 
 @-webkit-keyframes slide-bottom {
@@ -36,18 +46,13 @@ body {
   }
 
 
-#root {
-    background-color: black;
-}
-
 .header{
     text-align: center;
-    background-color: black;
 }
 
 .navbarcontainer{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -59,12 +64,11 @@ body {
 
 .pages {
     border: none;
-    background-color: white;
+    background-color: transparent;
     padding: 10px 40px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
-    background-color: black;
     color: white;
 }
 
@@ -80,7 +84,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
-    background-color: black;
+    background-color: transparent;
     color: white;
 }
 
@@ -127,13 +131,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
     .header{
-        height: 200px;
+        height: 250px;
     }
-    
     .navbar{
-    
         height: 60px;
     }
     
