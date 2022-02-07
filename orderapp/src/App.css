@@ -22,9 +22,10 @@
     cursor: pointer;
 }
 
-.header{
-    height: 150px;
-    text-align: center;
+.services {
+    position: absolute;
+    top: 160px;
+    right: 0;
 }
 
 .my-order-button {
@@ -61,6 +62,50 @@
     background-color: black;
     border-radius: 10px;
 }
+/* <==!==> */
+
+body {
+    margin: 0;
+    -webkit-animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: black;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+        opacity: 1;
+    }
+  }
+
+  @keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+        
+    }
+  }
+
+
+#root {
+    background-color: black;
+}
+
+.header{
+    text-align: center;
+    background-color: black;
+}
 
 .navbarcontainer{
     display: flex;
@@ -70,12 +115,8 @@
 
 .navbar{
     margin: 0 auto;
-}
-
-.services {
-    position: absolute;
-    top: 160px;
-    right: 0;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
 }
 
 .pages {
@@ -85,6 +126,8 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
+    background-color: black;
+    color: white;
 }
 
 
@@ -95,11 +138,12 @@
 
 .selected-page {
     border: none;
-    background-color: white;
     padding: 10px 40px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Yomogi', cursive;
+    background-color: black;
+    color: white;
 }
 
 .selected-page:hover, .selected-page:before, .selected-page:after {
@@ -119,7 +163,7 @@
 }
 
 .menuitemcontainer{
-    width:70%;
+    margin: 0 auto;
 }
 
 .menu{
@@ -261,10 +305,26 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
+<<<<<<< HEAD
     .selected-page,
     .pages {
         padding: 10px 15px;
+=======
+    /* For desktop: */
+    /* .header{
+        height: 200px;
+    }
+    
+    .navbar{
+    
+        height: 60px;
+    }
+    
+    .menu{
+
+        height: 680px;
+>>>>>>> main
     }
 
     .navbar {
@@ -283,6 +343,34 @@
         position: relative;
         bottom: 5%;
         left: 0;
+    }
+} */ 
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .header{
+        height: 200px;
+    }
+    
+    .navbar{
+    
+        height: 60px;
+    }
+    
+    .menu{
+
+        height: 680px;
+    }
+
+    .order{
+
+        height: 680px;
+        
+    }
+    
+    .footer{
+        height: 120px;
     }
 }
 
