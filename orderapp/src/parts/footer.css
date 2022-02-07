@@ -1,5 +1,7 @@
 .footer-container {
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #fb-img, #instagram-img, #twitter-img, #telegram-img {
