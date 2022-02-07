@@ -55,10 +55,12 @@ You can:
 * Choose the quantity of an item before adding the item.
 * Add the item to the order list.
 * Change the quantity of your items on the order list.
-* View your total bill (inclusive of 7% GST) in real-time.
+* View your total bill (inclusive of 7% GST).
 * Send the order list to the kitchen.
 * Call the server by clicking the bell icon.
 * Request for the bill by clicking the payment icon.
+* You can join membership by clicking the membership icon.
+* You can view a carousel of ongoing promotion.
 
 ## Acknowledgement
 * SkillsUnion
