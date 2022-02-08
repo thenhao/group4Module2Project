@@ -32,7 +32,7 @@ function OrderList(props) {
             </>
           }
         />
-      )}
+      }
     </>
   );
 }
