@@ -3,7 +3,7 @@
     width: 40px;
     position: absolute;
     top: -10px;
-    right: 120px;
+    right: 110px;
 }
 
 img {
@@ -22,4 +22,36 @@ img:hover {
     font-family: 'Yomogi', cursive;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .server {
+        height: 15px;
+        width: 20px;
+        right: 90px;
+    }
+
+    .server-content {
+        padding: 20px;
+        font-size: 14px;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .server {
+        height: 15px;
+        width: 20px;
+        right: 90px;
+    }
+
+    .server-content {
+        padding: 20px;
+        font-size: 14px;
+        width: auto;
+        height: auto;
+    }
 }

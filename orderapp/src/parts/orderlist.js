@@ -33,6 +33,7 @@ function OrderList(props) {
     <>
       <img src="https://i.ibb.co/tYKtTN0/image.jpg"
         alt="cart icon" 
+        className="orderlisticon"
         style={{height: 45, width: 45}}
         onClick={togglePopup} />
 
