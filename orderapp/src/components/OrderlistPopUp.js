@@ -14,10 +14,10 @@ function OrderlistPopUp(props) {
             <div className="popup-page">
                 {props.children}
 
-    <button className="close" onClick={() => props.setTrigger(false)}>X</button>
+    {/* <button className="close" onClick={() => props.setTrigger(false)}>X</button> */}
     <h1 className="popupTitle">Your Order Has Been Sent!</h1>
-    <Invoice className="invoice" id={props.id}/>
-    <div className="table">
+    <Invoice className="invoice"/>
+    {/* <div className="table">
     <table>
         <thead>
             <tr>
@@ -47,11 +47,11 @@ function OrderlistPopUp(props) {
             </th>
         </tr>
     </table>
-            </div>
+            </div>*/}
         </div>
     </div>
 
-    ) : "";
+    ) : ""; 
 
 
 }
