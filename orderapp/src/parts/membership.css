@@ -152,4 +152,32 @@
     .join {
         right: 85vw;
     }
+
+    .formcontainer{
+        margin-left:120px;
+        width:100%;
+    }
+
+    .signupbutton{
+        top: 440px;
+        left: 300px;
+    }
+
+    .signupcontainer{
+        width: 545px;
+    }
+
+    .signupagreement{
+        margin-left:70px;
+    }
+
+    .inputcheckboxcontainer{
+        margin-left: 80px;
+    }
+
+    .agreement{
+        width:300px;
+        padding-top: 1px;
+    }
+    
 }
