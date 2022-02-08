@@ -77,18 +77,20 @@ function App() {
   // responsive design
   const [show, setShow] = useState(false);
   const handleMenu = () => setShow(!show)
-  const [list, setList] = useState(false);
-  const handleClick = () => setList(!list);
 
   return (
     <>
-
+      
       <div className='background-opacity'>
         <div className='ingress'>
           <div className="header">
             <Header/>
           </div>
-
+          <div className="toggleMenu" onClick={handleMenu}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
           <div className='navbarcontainer'>
             <Router>
               <div className="navbar">
@@ -124,16 +126,7 @@ function App() {
 
 export default App;
 
-
-{/*commented out portion of code*/}
-      {/* <div className="my-order">
-        <button className="my-order-button" onClick={handleClick}>My Order</button>
-      </div>
-      <div className="toggleMenu" onClick={handleMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
+      {/* 
       <div className="header">
         <Header/>
       </div>
