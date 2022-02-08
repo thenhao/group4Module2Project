@@ -13,7 +13,7 @@ function OrderList(props) {
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
-  };
+  }
 
   const [TotalBilling, setTotalBilling] = useState(0);
 
@@ -21,8 +21,10 @@ function OrderList(props) {
     <>
       <img src={AddToCartImg} alt="cart icon" style={{ height: 35, width: 35 }} onClick={togglePopup}/>
 
-      {isOpen && (
-        <Popup popupType="orderlist-popup" handleClose={togglePopup} content={
+      {isOpen && <Popup 
+       popupType="orderlist-popup" 
+       handleClose={togglePopup} 
+       content={
             <>
               <CartItems selectedItemList={props.selectedItemList} setSelectedItemList={props.setSelectedItemList}/>
               <TotalBillCalculator selectedItemList={props.selectedItemList} TotalBilling={setTotalBilling}/>
