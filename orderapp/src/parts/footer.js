@@ -17,6 +17,7 @@ function Footer() {
         <img id="telegram-img"src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"  alt="telegram logo"/>
         <p className="copyright">&#169; 2022 GroupFour Inc.</p>
       </div>
+    </>
   );
 }
   
