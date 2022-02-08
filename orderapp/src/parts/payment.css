@@ -28,6 +28,13 @@ img:hover {
     .payment {
         right: 10px;
     }
+
+    .payment-content {
+        padding: 20px;
+        font-size: 14px;
+        width: auto;
+        height: auto;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {

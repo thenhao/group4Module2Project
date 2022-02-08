@@ -31,6 +31,13 @@ img:hover {
         width: 20px;
         right: 90px;
     }
+
+    .server-content {
+        padding: 20px;
+        font-size: 14px;
+        width: auto;
+        height: auto;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
