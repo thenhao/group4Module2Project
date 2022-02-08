@@ -52,7 +52,7 @@ function OrderList(props) {
       {sendOrderPopup && <Popup 
         popupType='orderbill-popup' 
         handleClose={toggleSendOrderPopup}
-        content={<OrderlistPopUp setSendOrderPopup={setSendOrderPopup} selectedItemList={props.selectedItemList}/>}/>}
+        content={<OrderlistPopUp setSendOrderPopup={setSendOrderPopup} selectedItemList={props.selectedItemList} TotalBilling={TotalBilling}/>}/>}
     </>);
 
 }

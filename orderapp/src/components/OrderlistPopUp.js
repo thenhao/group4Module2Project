@@ -23,6 +23,7 @@ function OrderlistPopUp(props) {
                     <th>Quantity</th>
                     <th>Price</th>
                 </tr>
+                <tr>{props.TotalBilling}</tr>
                 {/* {CartItems.selectedItemList} */}
                         {/* <tr>
                             <td>testing item one</td>
