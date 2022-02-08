@@ -4,16 +4,21 @@
   position: absolute;
   top: -15px;
   right: 190px;
+  z-index: -1;
 }
 
 .quantityUpdater {
-  width:25px;
-  height:25px;
+  width:20px;
+  height:20px;
   border-radius: 50%;
   background-color: white;
+  opacity: 70%;
   text-align: center;
-  margin-top: -15px;
+  margin-top: -20px;
   margin-left: 30px;
   font-family: "Yomogi", cursive;
-  font-weight: bold
+  font-weight: bold;
+  font-size: 12px;
+  z-index: 1;
+  position: absolute;
 }

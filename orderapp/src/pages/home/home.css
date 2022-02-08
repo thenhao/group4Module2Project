@@ -6,7 +6,7 @@
     position: relative;
     left: 0;
     top: 30px;
-    animation:blinkingText 1s infinite;
+    animation:blinkingText 2s infinite;
 
 }
 
