@@ -1,5 +1,4 @@
 import React from 'react';
-import './appetizer.css';
 import MenuitemContainer from '../../components/MenuitemContainer';
 
 export default function Appetizer(props) {
