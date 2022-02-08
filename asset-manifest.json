@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.693c8db5.css",
-    "main.js": "/static/js/main.fbe7f593.js",
-    "static/media/steak.jpg": "/static/media/steak.e865197bcd5c3c8178a5.jpg",
-    "static/media/background.jpg": "/static/media/background.9b93597e2696b1aee2f1.jpg",
-    "static/media/brownie.jpg": "/static/media/brownie.1b4a61fdb79a2eb8ce5d.jpg",
-    "static/media/mojito.jpg": "/static/media/mojito.1d75d1533fe62d3e38ca.jpg",
-    "static/media/telegram.png": "/static/media/telegram.2f9c4a7ea931a2a855db.png",
-    "static/media/twitter.png": "/static/media/twitter.c19f5b383603771a4292.png",
-    "static/media/instagram.png": "/static/media/instagram.ff1344dc7eb4c22bd189.png",
-    "static/media/facebook.png": "/static/media/facebook.8622b511688a21446318.png",
-    "static/media/sign-up.png": "/static/media/sign-up.31dedd126aeea2f31f03.png",
-    "index.html": "/index.html",
-    "main.693c8db5.css.map": "/static/css/main.693c8db5.css.map",
-    "main.fbe7f593.js.map": "/static/js/main.fbe7f593.js.map"
+    "main.css": "/GROUP4MODULE2PROJECT/static/css/main.0b40b2e8.css",
+    "main.js": "/GROUP4MODULE2PROJECT/static/js/main.1e341a32.js",
+    "static/media/steak.jpg": "/GROUP4MODULE2PROJECT/static/media/steak.e865197bcd5c3c8178a5.jpg",
+    "static/media/background.jpg": "/GROUP4MODULE2PROJECT/static/media/background.9b93597e2696b1aee2f1.jpg",
+    "static/media/brownie.jpg": "/GROUP4MODULE2PROJECT/static/media/brownie.1b4a61fdb79a2eb8ce5d.jpg",
+    "static/media/mojito.jpg": "/GROUP4MODULE2PROJECT/static/media/mojito.1d75d1533fe62d3e38ca.jpg",
+    "static/media/telegram.png": "/GROUP4MODULE2PROJECT/static/media/telegram.2f9c4a7ea931a2a855db.png",
+    "static/media/twitter.png": "/GROUP4MODULE2PROJECT/static/media/twitter.c19f5b383603771a4292.png",
+    "static/media/instagram.png": "/GROUP4MODULE2PROJECT/static/media/instagram.ff1344dc7eb4c22bd189.png",
+    "static/media/facebook.png": "/GROUP4MODULE2PROJECT/static/media/facebook.8622b511688a21446318.png",
+    "static/media/sign-up.png": "/GROUP4MODULE2PROJECT/static/media/sign-up.31dedd126aeea2f31f03.png",
+    "index.html": "/GROUP4MODULE2PROJECT/index.html",
+    "main.0b40b2e8.css.map": "/GROUP4MODULE2PROJECT/static/css/main.0b40b2e8.css.map",
+    "main.1e341a32.js.map": "/GROUP4MODULE2PROJECT/static/js/main.1e341a32.js.map"
   },
   "entrypoints": [
-    "static/css/main.693c8db5.css",
-    "static/js/main.fbe7f593.js"
+    "static/css/main.0b40b2e8.css",
+    "static/js/main.1e341a32.js"
   ]
 }
