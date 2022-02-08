@@ -7,7 +7,9 @@ function TotalBillCalculator(props) {
     totalBill = (totalBill + element.price * element.quantity) * 1.07;
   }
   let finalBill = Math.round(totalBill * 100) / 100;
-  props.TotalBilling(finalBill);
+  
+  console.log(props);
+  props.handleTotalBill(finalBill);
 
   // if-else statement to show total bill when cart is filled and disappears when cart is empty
 
