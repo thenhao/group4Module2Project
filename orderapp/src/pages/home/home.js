@@ -11,12 +11,12 @@ export default function Home() {
       <Carousel className="carouselcontainer" autoPlay infiniteLoop showArrows="true" showThumbs="false" thumbWidth={0}>
           <div>
           <h1 className="promotion-header">&#129346; HAPPY HOUR PROMOTION! &#129346;</h1>
-          <p className="promotion">Mojito @ $8</p>
-          <p className="promotion">5.30pm to 9.30pm on Fridays!</p>
+          <p className="promotion1">Mojito @ $8</p>
+          <p className="promotion2">5.30pm to 9.30pm on Fridays!</p>
           
           <div className="image-banner">
             <div className='image-banner'>
-              <img id='mojito-banner'src="https://images.pexels.com/photos/4784/alcohol-bar-party-cocktail.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              <img id='mojito-banner'src="https://i.ibb.co/8bCJqwF/image.jpg"
               alt="promotion"
               height="500"/>
             </div>
@@ -25,8 +25,8 @@ export default function Home() {
 
         <div>
           <h1 className="promotion-header">&#129385; LUNCH HOUR PROMOTION! &#129385;</h1>
-          <p className="promotion">Steak and fries 30% OFF !</p>
-          <p className="promotion">Available only from 11am to 1pm !</p>
+          <p className="promotion1">Steak and fries 30% OFF !</p>
+          <p className="promotion2">Available only from 11am to 1pm !</p>
           
           <div className="image-banner">
             <div className='image-banner'>
@@ -39,8 +39,8 @@ export default function Home() {
 
         <div>
           <h1 className="promotion-header">&#127851; DESSERT PROMOTION! &#127851;</h1>
-          <p className="promotion">Chocolate Brownie free with orders above $50 !</p>
-          <p className="promotion">While stocks last !</p>
+          <p className="promotion1">Chocolate Brownie free with orders above $50 !</p>
+          <p className="promotion2">While stocks last !</p>
           
           <div className="image-banner">
             <div className='image-banner'>

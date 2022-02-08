@@ -12,10 +12,13 @@ export default function Payment() {
 
     return (
         <>
-            <img src={BillImg} 
+            <div className="paymentDiv">
+                <img src={BillImg} 
                 alt="payment icon" 
                 style={{height: 35, width: 35}}
                 onClick={togglePopup} />
+            </div>
+            
         
             {isOpen && <Popup
             popupType='payment-popup'
