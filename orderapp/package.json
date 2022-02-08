@@ -2,7 +2,7 @@
   "name": "orderapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thenhao.github.io/group4Module2Project/",
+  "homepage": "https://thenhao.github.io/group4Module2Project",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@testing-library/jest-dom": "^5.16.1",
