@@ -1,12 +1,7 @@
-.promotion {
-    text-align: center;
-    margin-top: 50px;
-}
-
 .promotion-header {
     text-align: center;
     font-family: "Vibur",cursive;
-    font-size: 60px;
+    font-size: 50px;
     color: yellow;
     position: relative;
     left: 0;
@@ -26,7 +21,7 @@
 .promotion1 {
     text-align: center;
     font-family: "Calligraffitti",cursive;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
     margin-top: 80px;
     color: white;
@@ -35,7 +30,7 @@
 .promotion2 {
     text-align: center;
     font-family: "Calligraffitti",cursive;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
 }
@@ -47,19 +42,14 @@
     position: relative;
     top:0;
     left: 0;
-    animation:blinkingText 2s infinite;
-}
-
-.image-banner img {
     width: 450px;
     height: 450px;
-    margin-bottom: 20px;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .carousel {
     position: relative;
-    left: -5%;
 }
 
 #brownie-banner, #steak-banner, #mojito-banner{
@@ -82,63 +72,3 @@
     margin-top: -60px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .promotion {
-        width: 100vw;
-    }
-
-    .promotion-header {
-        font-size: 20px;
-    }
-
-    .promotion-detail {
-        font-size: 18px;
-    }
-
-    .image-banner {
-        width: 300px;
-        height: 300px;
-        margin-top: 30px;
-    }
-
-    .image-banner img {
-        height: 300px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .promotion-header {
-        font-size: 26px;
-    }
-
-    .promotion-detail {
-        font-size: 28px;
-    }
-
-    .image-banner {
-        width: 250px;
-        height: 250px;
-        margin-top: 20px;
-    }
-
-    .image-banner img {
-        height: 250px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
