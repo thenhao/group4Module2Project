@@ -7,7 +7,7 @@ import OrderlistPopUp from './OrderlistPopUp' ;
 //Create a function for Send Button
 //OnClick Send Button, a Popup will appear using modal
 
-function OrderlistSendBtn ({selectedItemList, setTotalBilling}) {
+function OrderlistSendBtn ({selectedItemList, setTotalBilling, TotalBilling}) {
   const [buttonPopup, setButtonPopup] = useState(false);
 
   
@@ -20,8 +20,13 @@ let htmlBill = setTotalBilling;
 return htmlBill;
 }
 
+// function generateInvoiceId() {
+//   const id = uuid();
+// }
+
+
      function createEmailItems() {
-      let htmlString = `<table width="500" cellspacing="2" border="1"><tr><th width="300" colspan="3" align="left">Invoice Ref: </th></tr><tr ><th>Item</th><th>Quantity</th><th>Price</th></tr><tfoot><tr><td colspan="3">Total Bill (inclusive of 7% GST): </td></tr></tfoot>`;
+      let htmlString = `<table width="500" cellspacing="2" border="1"><tr><th width="300" colspan="3" align="left">Invoice Ref: </th></tr><tr ><th>Item</th><th>Quantity</th><th>Price</th></tr><tfoot><tr><td colspan="2">Total Bill (inclusive of 7% GST): </td><td colspan="1" align="right">$ ${TotalBilling}</td></tr></tfoot>`;
 
       //Generate Dynamic Data
       selectedItemList.map(element => {
@@ -67,7 +72,7 @@ return htmlBill;
 
 
         {/* Create a trigger={} to allow a function that trigger useState */}
-        <OrderlistPopUp trigger={buttonPopup} setTrigger={setButtonPopup} selectedItemList={selectedItemList}/>
+        <OrderlistPopUp trigger={buttonPopup} setTrigger={setButtonPopup} selectedItemList={selectedItemList} TotalBilling={TotalBilling}/>
       </>
     )
   }  

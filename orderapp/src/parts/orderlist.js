@@ -13,7 +13,8 @@ function OrderList(props) {
   const [sendOrderPopup, setSendOrderPopup] = useState(false);
   const [TotalBilling, setTotalBilling] = useState(0);
   
-  const setTotalBill = (bill) => {
+  const handleTotalBill = (bill) => {
+    console.log('Inside handle total billing: ', bill);
     setTotalBilling(bill);
   }
 
@@ -48,7 +49,7 @@ function OrderList(props) {
       content={
         <>
           <CartItems selectedItemList={props.selectedItemList} setSelectedItemList={props.setSelectedItemList}/>
-          <TotalBillCalculator selectedItemList={props.selectedItemList} setTotalBill={setTotalBill}/>              
+          <TotalBillCalculator selectedItemList={props.selectedItemList} handleTotalBill={handleTotalBill}/>              
           <OrderlistSendBtn selectedItemList={props.selectedItemList} TotalBilling={TotalBilling} setIsOpen={setIsOpen} setSendOrderPopup={setSendOrderPopup}/>
         </>
       }/>}
@@ -56,7 +57,7 @@ function OrderList(props) {
       {sendOrderPopup && <Popup 
         popupType='orderbill-popup' 
         handleClose={toggleSendOrderPopup}
-        content={<OrderlistPopUp setSendOrderPopup={setSendOrderPopup} selectedItemList={props.selectedItemList}/>}/>}
+        content={<OrderlistPopUp setSendOrderPopup={setSendOrderPopup} TotalBilling={TotalBilling} selectedItemList={props.selectedItemList}/>}/>}
     </>);
 
 }

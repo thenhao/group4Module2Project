@@ -55,8 +55,8 @@ function OrderlistPopUp(props) {
         </tbody>
         <tr>
             <th colSpan="3">
-                {/* <h3>Total Bill (inclusive of 7% GST): ${props.finalBill}</h3> */}
-            <h3><TotalBillCalculator selectedItemList={props.selectedItemList} setTotalBilling={props.setTotalBilling}  /> </h3>
+                <h3>Total Bill (inclusive of 7% GST): ${props.TotalBilling}</h3>
+
             </th>
         </tr>
         
