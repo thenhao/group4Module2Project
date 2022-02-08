@@ -95,9 +95,9 @@ function Menuitemcomponent(props){
                  </div>
                 
                 <div className="quantity-container">
-                    <Custombutton className="minusbutton" sign="-" click={minus}/>
-                    <input className="menu-input" type="text" value={itemCount} onChange={minmaxquantity}></input>
-                    <Custombutton className="plusbutton" sign="+" click={plus}/>
+                        <Custombutton className="minusbutton" sign="-" click={minus}/>
+                        <input className="menu-input" type="text" value={itemCount} onChange={minmaxquantity}></input>
+                        <Custombutton className="plusbutton" sign="+" click={plus}/>
                 </div>
                  
                  <button className='addbutton' onClick={sendtoorder}>Add</button>

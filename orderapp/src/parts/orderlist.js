@@ -1,25 +1,26 @@
-import React, {useState} from 'react';
-import AddToCartImg from '../assets/addtocart.png';
+import React, { useState } from "react";
+import AddToCartImg from "../assets/addtocart.png";
 
 import Popup from '../components/popup/popup';
 import CartItems from '../components/CartItems';
 import TotalBillCalculator from '../components/TotalBillCalculator';
 import OrderlistSendBtn from '../components/OrderlistSendBtn';
 import OrderlistPopUp from '../components/OrderlistPopUp' ;
-
-import './orderlist.css';
+import "./orderlist.css";
 
 function OrderList(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [sendOrderPopup, setSendOrderPopup] = useState(false);
-
+  const [TotalBilling, setTotalBilling] = useState(0);
+  
   const togglePopup = () => {
     setIsOpen(!isOpen);
   }
-
+  
   const toggleSendOrderPopup = () => {
     setSendOrderPopup(!sendOrderPopup);
   }
+  
   function updateQuantityHandler() {
     let totalQuantity = 0;
     for (let i = 0; i < props.selectedItemList.length; i++){
@@ -53,6 +54,7 @@ function OrderList(props) {
         handleClose={toggleSendOrderPopup}
         content={<OrderlistPopUp setSendOrderPopup={setSendOrderPopup} selectedItemList={props.selectedItemList}/>}/>}
     </>);
+
 }
 
 export default OrderList;
