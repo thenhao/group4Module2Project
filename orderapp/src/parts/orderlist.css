@@ -2,8 +2,8 @@
   height: 30px;
   width: 40px;
   position: absolute;
-  top: -15px;
-  right: 190px;
+  top: -25px;
+  right: 160px;
   z-index: 1;
 }
 
@@ -31,6 +31,35 @@ img:hover {
 @media only screen and (max-width: 600px) {
   .orderlist {
     right: 130px;
+    top: -18px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .orderlist {
+    right: 140px;
+    top: -18px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .orderlist {
+    right: 190px;
+    top: -18px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .orderlist {
+    right: 200px;
     top: -18px;
   }
 }
