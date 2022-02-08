@@ -91,7 +91,10 @@
     position: absolute;
     top: 430px;
     left: 170px;
+    background-color: rgb(240, 240, 240);
+
 }
+
 .signupimagecontainer{
     width:49%;
     height: fit-content;
@@ -118,3 +121,5 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+

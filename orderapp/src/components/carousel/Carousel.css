@@ -1,7 +1,30 @@
-.carouselimagecontainer{
-     /* width: 1421px;
-     height:699px;  */
+/* .carouselimagecontainer{
+     width: 1421px;
+     height:699px; 
+ } */
+
+ .carousel .carousel-status{
+    font-size: 0px;
+  }
+
+ .carousel .dot{
+    width:0px;
+     height: 0px;
+     padding: 0px;
+     margin: 0px;
  }
+ .carousel .dot .selected{
+    width:0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+ }
+ .carousel .control-dots{
+    width:0px;
+     height: 0px;
+     padding: 0px;
+     margin: 0px;
+  }
  
  .carousel .thumb{
      width:0px;
@@ -27,8 +50,9 @@
  }
  
  .carouselcontainer{
-     width: 1421px;
+     width: 1000px;
      /* height: 450px; */
+     margin: 50px auto;
  }
  
  .slide.selected{

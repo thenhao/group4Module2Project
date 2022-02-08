@@ -55,30 +55,31 @@ function CartItems(props) {
     return(
       <div>
         <h2>- ORDERS -</h2>
-        <tr>
-          <th className='table-header'>Item</th>
-          <th className='table-header'>Quantity</th>
-          <th className='table-header'>Price</th>
-        </tr>
-        {selectedItemList.map(obj => {
-          return(
-            <>
-              <tr>
-                <td className='table-content'>{obj.name}</td>
-                <td className='table-content'>
-                  <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '-')}>-</button>
-                  <input className="quantityDisplay" type='text' inputMode='numeric' value={obj.quantity}/>
-                  <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '+')}>+</button>
-                </td>
-                <td className='table-content'>
-                  ${(obj.price*obj.quantity).toFixed(2)}
-                </td>
-              </tr>
-              <hr/>
-            </>
-            
-          );
-        })}
+        <table className="orderlist-table">
+          <tr>
+            <th className='table-header'>Item</th>
+            <th className='table-header'>Quantity</th>
+            <th className='table-header'>Price</th>
+          </tr>
+          {selectedItemList.map(obj => {
+            return(
+              <>
+                <tr>
+                  <td className='table-content'>{obj.name}</td>
+                  <td className='table-content'>
+                    <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '-')}>-</button>
+                    <input className="quantityDisplay" type='text' inputMode='numeric' value={obj.quantity}/>
+                    <button className="addMinusItem" onClick={() => handleChangeQuantity(obj.name, '+')}>+</button>
+                  </td>
+                  <td className='table-content'>
+                    ${(obj.price*obj.quantity).toFixed(2)}
+                  </td>
+                </tr>
+              </>
+            );
+          })}    
+        </table>
+        <hr/>
       </div>
     );
   }

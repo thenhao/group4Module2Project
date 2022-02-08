@@ -1,4 +1,3 @@
-import OrderlistPopUp from './OrderlistPopUp' ;
 import { useState } from 'react';
 import './OrderlistSendBtn.css';
 import AddToCartItems from './OrderlistContainer'
@@ -8,7 +7,11 @@ import AddToCartItems from './OrderlistContainer'
 
 
 function OrderlistSendBtn (props) {
-    const [buttonPopup, setButtonPopup] = useState(false);
+    //state handler to close orderlist and open bill
+    function sendButtonOnClick() {
+      props.setIsOpen(false);
+      props.setSendOrderPopup(true);
+    }
 
     //if-else statement to show button when cart is filled and disappear when cart is empty
     if(props.selectedItemList.length === 0) {
@@ -16,14 +19,9 @@ function OrderlistSendBtn (props) {
     }
     else {
       return (
-        <>
-          <div className="sendbtn-container">
-            <button id='sendorderbtn' onClick={() => setButtonPopup(true)}>Send Order</button>
-          </div>
-  
-          {/* Create a trigger={} to allow a function that trigger useState */}
-          <OrderlistPopUp trigger={buttonPopup} setTrigger={setButtonPopup}/>
-        </>
+        <div className="sendbtn-container">
+            <button id='sendorderbtn' onClick={sendButtonOnClick}>Send Order</button>
+        </div>
       )
     }  
 }

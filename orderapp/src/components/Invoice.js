@@ -5,6 +5,6 @@ export default function Invoice() {
     console.log("Order Id:", id);
 
 return (
-    <p style={{textAlign: "center"}}><strong>Invoice number:</strong>&nbsp;{uuid()}</p>
+    <p style={{textAlign: "center", fontFamily: "Yomogi, cursive", fontWeight: "bold"}}><strong>Invoice number:</strong>&nbsp;{uuid()}</p>
 )
 }

@@ -12,14 +12,12 @@ import Header from './parts/header';
 import Payment from './parts/payment';
 import Server from './parts/server';
 import Membership from './parts/membership.js';
-import OrderList from './parts/orderlist.js';
+import OrderList from './parts/orderlist.js'
 
-import CartItems from './components/CartItems';
-import OrderlistSendBtn from './components/OrderlistSendBtn';
+
 import AddedItem from './components/OrderlistContainer.js';
 // import MenuitemContainer from './components/MenuitemContainer.js';
 import CategoryData from './components/CategoryData.js';
-import TotalBillCalculator from "./components/TotalBillCalculator.js";
 
 import './App.css';
 import './components/OrderlistSendBtn.css';
@@ -84,7 +82,51 @@ function App() {
 
   return (
     <>
-      <div className="my-order">
+
+      <div className='background-opacity'>
+        <div className='ingress'>
+          <div className="header">
+            <Header/>
+          </div>
+
+          <div className='navbarcontainer'>
+            <Router>
+              <div className="navbar">
+                <Link to="/"><button onClick={()=> {setPageState("Home")}} className={pageState === "Home"? "selected-page" : "pages"}>Home</button></Link>
+                <Link to="/pages/appetizer"><button onClick={()=> {setPageState("Appetizers")}} className={pageState === "Appetizers"? "selected-page" : "pages"}>Appetizers</button></Link>
+                <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
+                <Link to="/pages/beverage"><button onClick={()=> {setPageState("Beverages")}} className={pageState === "Beverages"? "selected-page" : "pages"}>Beverages</button></Link>
+                <Link to="/pages/dessert"><button onClick={()=> {setPageState("Desserts")}} className={pageState === "Desserts"? "selected-page" : "pages"}>Desserts</button></Link>
+                <span className='orderlist'><OrderList selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/></span>
+                <span className='signup'><Membership/></span>
+                <span className='server'><Server /></span>
+                <span className='payment'><Payment /></span>
+                {/* <span className='signin'><SignIn/></span> */}
+              </div>
+              <div className='menuitemcontainer'>
+                <Switch>
+                  <Route exact path="/"><Home /></Route>
+                  <Route path="/pages/appetizer"><Appetizer data={menu} addtocart={AddItemToCart} type={CategoryData[0]}/></Route>
+                  <Route path="/pages/main"><Main data={menu} addtocart={AddItemToCart} type={CategoryData[1]}/></Route>
+                  <Route path="/pages/beverage"><Beverage data={menu} addtocart={AddItemToCart} type={CategoryData[2]}/></Route>
+                  <Route path="/pages/dessert"><Dessert data={menu} addtocart={AddItemToCart} type={CategoryData[3]}/></Route>
+                </Switch>
+                
+              </div>
+            </Router>
+              </div>
+                <Footer/>
+            </div>
+          </div>
+        </>
+      );
+    }
+
+export default App;
+
+
+{/*commented out portion of code*/}
+      {/* <div className="my-order">
         <button className="my-order-button" onClick={handleClick}>My Order</button>
       </div>
       <div className="toggleMenu" onClick={handleMenu}>
@@ -98,7 +140,7 @@ function App() {
       <div className='navbarcontainer'>
         <Router>
           {/* <div className={show ? "navbar active" : "navbar"}> */}
-          <div className="navbar">
+         {/* <div className="navbar">
             <Link to="/"><button onClick={()=> {setPageState("Home")}} className={pageState === "Home"? "selected-page" : "pages"}>Home</button></Link>
             <Link to="/pages/appetizer"><button onClick={()=> {setPageState("Appetizers")}} className={pageState === "Appetizers"? "selected-page" : "pages"}>Appetizers</button></Link>
             <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
@@ -109,7 +151,7 @@ function App() {
             <span className='server'><Server /></span>
             <span className='payment'><Payment /></span>
             {/* <span className='signin'><SignIn/></span> */}
-          </div>
+          {/*</div>
           
           <div className='menuitemcontainer'>
             <Switch>
@@ -121,7 +163,7 @@ function App() {
             </Switch>
              
           </div>
-        </Router>
+        </Router>*/}
 
       {/* // </div>
       // <div className={list ? "orderlistcontainer active" : "orderlistcontainer"}>
@@ -136,17 +178,6 @@ function App() {
             <CartItems className='cartlist-container' selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/>  
             <TotalBillCalculator selectedItemList={selectedItemList} />              
             <OrderlistSendBtn selectedItemList={selectedItemList}/>
-          </div>
-        </div> */}
-      </div>
 
+          </div>*/}
           
-      <div className='footer'>
-        <Footer/>
-      </div> 
-
-    </>
-  );
-}
-
-export default App;
