@@ -44,7 +44,7 @@ function OrderList(props) {
       content={
         <>
           <CartItems selectedItemList={props.selectedItemList} setSelectedItemList={props.setSelectedItemList}/>
-          <TotalBillCalculator selectedItemList={props.selectedItemList} />              
+          <TotalBillCalculator selectedItemList={props.selectedItemList} TotalBilling={setTotalBilling}/>              
           <OrderlistSendBtn selectedItemList={props.selectedItemList} setIsOpen={setIsOpen} setSendOrderPopup={setSendOrderPopup}/>
         </>
       }/>}
