@@ -21,7 +21,7 @@ export default function ConfirmedOrder() {
       <input type="text" name="user_name" />
       <label>Quantity</label>
       <label>Price</label> */}
-      <input className="confirm-send-btn" type="submit" value="Confirm Send" />
+      <input className="confirm-send-btn" type="submit" value="Email Invoice" />
     </form>
   );
 };

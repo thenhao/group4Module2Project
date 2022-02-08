@@ -39,7 +39,7 @@ function OrderlistPopUp(props) {
 
         <div className='button-container'>
             {/* Two inner button within the pop-up to 1.Amend (close the page) 2.Send the Order through */}
-            <button className="amend-btn" onClick={() => props.setSendOrderPopup(false)}>Amend Order</button>
+            {/* <button className="amend-btn" onClick={() => props.setSendOrderPopup(false)}>Amend Order</button> */}
             <ConfirmedOrder className="confirm-send-btn"/>
             {/* <button className="confirm-send-btn" onSubmit={sendEmail}>Confirm Send</button> */}
         </div>
