@@ -34,4 +34,32 @@ img:hover {
     right: 100px;
     top: -25px;
   }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .orderlist {
+      right: 110px;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .orderlist {
+      right: 130px;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .orderlist {
+      right: 140px;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .orderlist {
+      right: 160px;
+    }
+  }
 }

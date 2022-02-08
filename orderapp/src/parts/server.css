@@ -45,7 +45,7 @@ img:hover {
     .server {
         height: 15px;
         width: 20px;
-        right: 90px;
+        right: 92px;
     }
 
     .server-content {
@@ -53,5 +53,26 @@ img:hover {
         font-size: 14px;
         width: auto;
         height: auto;
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .server {
+            right: 94px;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .server {
+            right: 98px;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .server {
+            right: 100px;
+        }
     }
 }
