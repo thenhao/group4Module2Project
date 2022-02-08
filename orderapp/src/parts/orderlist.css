@@ -27,3 +27,12 @@ img:hover {
   z-index: 1;
   position: absolute;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .orderlist {
+    right: 130px;
+    top: -18px;
+  }
+
+}
