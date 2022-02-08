@@ -1,7 +1,7 @@
 import API from './api/api.js';
 import React, {useState, useEffect} from 'react';
 
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Link, Redirect} from 'react-router-dom';
 import Home from './pages/home/home';
 import Appetizer from './pages/appetizer/appetizer';
 import Main from './pages/main/main';
@@ -109,10 +109,11 @@ function App() {
               <div className='menuitemcontainer'>
                 <Switch>
                   <Route exact path="/"><Home /></Route>
-                  <Route path="/pages/appetizer"><Appetizer data={menu} addtocart={AddItemToCart} type={CategoryData[0]}/></Route>
-                  <Route path="/pages/main"><Main data={menu} addtocart={AddItemToCart} type={CategoryData[1]}/></Route>
-                  <Route path="/pages/beverage"><Beverage data={menu} addtocart={AddItemToCart} type={CategoryData[2]}/></Route>
-                  <Route path="/pages/dessert"><Dessert data={menu} addtocart={AddItemToCart} type={CategoryData[3]}/></Route>
+                  <Route path="/appetizer"><Appetizer data={menu} addtocart={AddItemToCart} type={CategoryData[0]}/></Route>
+                  <Route path="/main"><Main data={menu} addtocart={AddItemToCart} type={CategoryData[1]}/></Route>
+                  <Route path="/beverage"><Beverage data={menu} addtocart={AddItemToCart} type={CategoryData[2]}/></Route>
+                  <Route path="/dessert"><Dessert data={menu} addtocart={AddItemToCart} type={CategoryData[3]}/></Route>
+                  <Redirect from ="*" to="/" />
                 </Switch>
                 
               </div>
