@@ -45,6 +45,10 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 
 ![https://i.ibb.co/0YsnnFv/Untitled.jpg](https://i.ibb.co/0YsnnFv/Untitled.jpg)
 
+### Final product
+
+![https://github.com/thenhao/group4Module2Project/blob/9f5dcc851443d336a67463806a3601fe824949a0/ambrosial.jpg](https://github.com/thenhao/group4Module2Project/blob/9f5dcc851443d336a67463806a3601fe824949a0/ambrosial.jpg)
+
 ## Getting Started
 
 ### Usage
