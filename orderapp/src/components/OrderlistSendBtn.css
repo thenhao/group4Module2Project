@@ -6,7 +6,9 @@
 #sendorderbtn { 
   padding: 10px;
   max-width: 150px;
-  background-color: rgb(240, 240, 240);
+  background-color: aquamarine;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 
