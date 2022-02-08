@@ -13,6 +13,10 @@ function OrderList(props) {
   const [sendOrderPopup, setSendOrderPopup] = useState(false);
   const [TotalBilling, setTotalBilling] = useState(0);
   
+  const setTotalBill = (bill) => {
+    setTotalBilling(bill);
+  }
+
   const togglePopup = () => {
     setIsOpen(!isOpen);
   }
@@ -44,8 +48,8 @@ function OrderList(props) {
       content={
         <>
           <CartItems selectedItemList={props.selectedItemList} setSelectedItemList={props.setSelectedItemList}/>
-          <TotalBillCalculator selectedItemList={props.selectedItemList} TotalBilling={setTotalBilling}/>              
-          <OrderlistSendBtn selectedItemList={props.selectedItemList} setIsOpen={setIsOpen} setSendOrderPopup={setSendOrderPopup}/>
+          <TotalBillCalculator selectedItemList={props.selectedItemList} setTotalBill={setTotalBill}/>              
+          <OrderlistSendBtn selectedItemList={props.selectedItemList} TotalBilling={TotalBilling} setIsOpen={setIsOpen} setSendOrderPopup={setSendOrderPopup}/>
         </>
       }/>}
 
