@@ -11,6 +11,7 @@ import MojitoImg from '../../assets/mojito.jpg';
 export default function Home() {
   
   return (  
+    <div className="home">
       <Carousel className="carouselcontainer" autoPlay infiniteLoop showArrows="true" showThumbs="false" thumbWidth={0}>
           <div>
 
@@ -46,5 +47,6 @@ export default function Home() {
           </div>
         </div>
       </Carousel>
+      </div>
   );
 }

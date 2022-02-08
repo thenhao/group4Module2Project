@@ -2,9 +2,9 @@
     background-color: mediumturquoise;
     border: 1px solid white;
     border-radius: 3px;
-    position: absolute;
+    position: relative;
     top: 0;
-    right: 900px;
+    right: 78vw;
     width: 150px;
     padding: 5px;
 }
@@ -116,7 +116,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .join {
-        right: 110px;
+        right: 30vw;
     }
 }
 

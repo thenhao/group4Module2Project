@@ -12,9 +12,10 @@
 
 @keyframes blinkingText{
     0% {color: yellow;}
+    20% {color: yellow;}
     49% {color: transparent;}
     50% {color: transparent;}
-    99% {color: transparent;}
+    90% {color: yellow;}
     100% {color: yellow;}
 }
 
@@ -35,7 +36,9 @@
     color: white;
 }
 
-.image-banner-1, .image-banner-2, .image-banner-3 {
+.image-banner-1, 
+.image-banner-2, 
+.image-banner-3 {
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -72,3 +75,46 @@
     margin-top: -60px;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .home {
+        width: 100vw;
+        margin-left: -82%;
+    }
+
+    .promotion-header {
+        font-size: 22px;
+    }
+
+    .promotion1,
+    .promotion2 {
+        font-size: 16px;
+    }
+
+    .image-banner-1, 
+    .image-banner-2, 
+    .image-banner-3 {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
