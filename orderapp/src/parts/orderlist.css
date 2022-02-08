@@ -31,8 +31,8 @@ img:hover {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .orderlist {
-    right: 130px;
-    top: -18px;
+    right: 100px;
+    top: -25px;
   }
 }
 
