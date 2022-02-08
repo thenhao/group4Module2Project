@@ -3,7 +3,7 @@ import './OrderlistSendBtn.css';
 import emailjs from '@emailjs/browser';
 import Invoice from './Invoice.js'
 import OrderlistPopUp from './OrderlistPopUp' ;
-import {v4 as uuid} from 'uuid';
+
 
 
 function OrderlistSendBtn ({selectedItemList, setTotalBilling, TotalBilling}) {

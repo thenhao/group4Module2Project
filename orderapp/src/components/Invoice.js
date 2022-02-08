@@ -1,10 +1,9 @@
 import {v4 as uuid} from 'uuid';
 
-export default function Invoice({id}) {
+export default function Invoice() {
     
-    console.log("Order Id:", id);
 
 return (
-    <p style={{textAlign: "center", fontFamily: "sans-serif", fontWeight: "bold"}}><strong>Invoice number:</strong>&nbsp;{id}</p>
+    <p style={{textAlign: "center", fontFamily: "sans-serif", fontWeight: "bold"}}><strong>Invoice number:</strong>&nbsp;{uuid()}</p>
 )
 }
