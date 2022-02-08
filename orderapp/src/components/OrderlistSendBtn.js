@@ -27,19 +27,3 @@ function OrderlistSendBtn (props) {
 }
 
 export default OrderlistSendBtn;
-
-// function OrderlistSendBtn () {
-    
-//     return (
-//         <div>
-//             <button >Send Order</button>
-//         </div>
-
-
-//     )
-
-
-
-// }
-
-// export default OrderlistSendBtn;

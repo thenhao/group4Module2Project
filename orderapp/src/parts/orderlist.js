@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import AddToCartImg from "../assets/addtocart.png";
 
 import Popup from '../components/popup/popup';
 import CartItems from '../components/CartItems';

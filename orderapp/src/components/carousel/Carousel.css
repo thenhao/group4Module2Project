@@ -1,8 +1,3 @@
-/* .carouselimagecontainer{
-     width: 1421px;
-     height:699px; 
- } */
-
  .carousel .carousel-status{
     font-size: 0px;
   }
@@ -51,7 +46,6 @@
  
  .carouselcontainer{
      width: 1000px;
-     /* height: 450px; */
      margin: 50px auto;
  }
  
