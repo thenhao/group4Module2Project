@@ -1,5 +1,4 @@
 import React from 'react';
-import './dessert.css';
 import MenuitemContainer from '../../components/MenuitemContainer';
 
 export default function Dessert(props) {

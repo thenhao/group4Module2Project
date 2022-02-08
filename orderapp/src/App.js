@@ -77,31 +77,34 @@ function App() {
   // responsive design
   const [show, setShow] = useState(false);
   const handleMenu = () => setShow(!show)
-  const [list, setList] = useState(false);
-  const handleClick = () => setList(!list);
 
   return (
     <>
-
+      
       <div className='background-opacity'>
         <div className='ingress'>
           <div className="header">
             <Header/>
           </div>
-
+          <div className="toggleMenu" onClick={handleMenu}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
           <div className='navbarcontainer'>
             <Router>
-              <div className="navbar">
+            <div className={show ? "navbar active" : "navbar"}>
                 <Link to="/"><button onClick={()=> {setPageState("Home")}} className={pageState === "Home"? "selected-page" : "pages"}>Home</button></Link>
                 <Link to="/pages/appetizer"><button onClick={()=> {setPageState("Appetizers")}} className={pageState === "Appetizers"? "selected-page" : "pages"}>Appetizers</button></Link>
                 <Link to="/pages/main"><button onClick={()=> {setPageState("Mains")}} className={pageState === "Mains"? "selected-page" : "pages"}>Mains</button></Link>
                 <Link to="/pages/beverage"><button onClick={()=> {setPageState("Beverages")}} className={pageState === "Beverages"? "selected-page" : "pages"}>Beverages</button></Link>
                 <Link to="/pages/dessert"><button onClick={()=> {setPageState("Desserts")}} className={pageState === "Desserts"? "selected-page" : "pages"}>Desserts</button></Link>
+              </div>
+              <div>
                 <span className='orderlist'><OrderList selectedItemList={selectedItemList} setSelectedItemList={setSelectedItemList}/></span>
                 <span className='signup'><Membership/></span>
                 <span className='server'><Server /></span>
                 <span className='payment'><Payment /></span>
-                {/* <span className='signin'><SignIn/></span> */}
               </div>
               <div className='menuitemcontainer'>
                 <Switch>
@@ -124,16 +127,7 @@ function App() {
 
 export default App;
 
-
-{/*commented out portion of code*/}
-      {/* <div className="my-order">
-        <button className="my-order-button" onClick={handleClick}>My Order</button>
-      </div>
-      <div className="toggleMenu" onClick={handleMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
+      {/* 
       <div className="header">
         <Header/>
       </div>

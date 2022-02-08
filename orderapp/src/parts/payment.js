@@ -12,7 +12,7 @@ export default function Payment() {
 
     return (
         <>
-            <div className="paymentDiv">
+            <div className="payment">
                 <img src={BillImg} 
                 alt="payment icon" 
                 style={{height: 35, width: 35}}

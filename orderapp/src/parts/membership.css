@@ -2,9 +2,9 @@
     background-color: mediumturquoise;
     border: 1px solid white;
     border-radius: 3px;
-    position: absolute;
+    position: relative;
     top: 0;
-    right: 900px;
+    right: 80vw;
     width: 150px;
     padding: 5px;
 }
@@ -14,7 +14,7 @@
     font-size: 70px;
     text-align: center;
     margin-top: 20px;
-    padding-right: 33px;
+    padding-left: 10px;
 }
 
 .signupsubtitle{
@@ -22,7 +22,7 @@
     font-weight: bold;
     font-family: 'Yomogi', cursive;
     text-align: center;
-    padding-right: 20px;
+    padding-left: 10px;
     margin: -10px 0;
 }
 
@@ -43,33 +43,22 @@
     margin-bottom: 10px;
     position: relative;
     left: 20%;
-    width: 300px
+    width: 300px;
 }
 
-.inputcheckbox{
-    margin:0px;
-}
-
-.inputcheckboxwrapper{
-    height: 14px;
-    width: 14px;
-    padding-top: 2px;
-    /* justify-items: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    align-self: center; */
+.inputcheckbox:hover{
+    cursor: pointer;
 }
 
 .agreement{
     width:370px;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 2px;
 }
 
 .inputcheckboxcontainer{
     align-self: auto;
-    margin-left: 80px;
+    margin-left: 90px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -77,7 +66,7 @@
 
 .signupagreement{
     width:370px;
-    margin: -10px 0 10px 80px;
+    margin: -10px 0 10px 100px;
 }
 
 .agreement,
@@ -90,7 +79,7 @@
     width: 100px;
     position: absolute;
     top: 430px;
-    left: 170px;
+    left: 180px;
     background-color: rgb(240, 240, 240);
 
 }
@@ -112,6 +101,8 @@
     flex-wrap: wrap;
     position: relative;
     left: 30px;
+    overflow-x: hidden;
+    width: 470px;
 }
 
 .formcontainer{   
@@ -122,4 +113,37 @@
     overflow-y: hidden;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .join {
+        right: 38vw;
+    }
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .join {
+        right: 55vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .join {
+        right: 67vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .join {
+        right: 75vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .join {
+        right: 80vw;
+    }
+}
