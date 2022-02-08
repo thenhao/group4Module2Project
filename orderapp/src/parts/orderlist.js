@@ -19,27 +19,13 @@ function OrderList(props) {
 
   return (
     <>
-      <img
-        src={AddToCartImg}
-        alt="cart icon"
-        style={{ height: 35, width: 35 }}
-        onClick={togglePopup}
-      />
+      <img src={AddToCartImg} alt="cart icon" style={{ height: 35, width: 35 }} onClick={togglePopup}/>
 
       {isOpen && (
-        <Popup
-          popupType="orderlist-popup"
-          handleClose={togglePopup}
-          content={
+        <Popup popupType="orderlist-popup" handleClose={togglePopup} content={
             <>
-              <CartItems
-                selectedItemList={props.selectedItemList}
-                setSelectedItemList={props.setSelectedItemList}
-              />
-              <TotalBillCalculator
-                selectedItemList={props.selectedItemList}
-                TotalBilling={setTotalBilling}
-              />
+              <CartItems selectedItemList={props.selectedItemList} setSelectedItemList={props.setSelectedItemList}/>
+              <TotalBillCalculator selectedItemList={props.selectedItemList} TotalBilling={setTotalBilling}/>
               <OrderlistSendBtn selectedItemList={props.selectedItemList} />
             </>
           }
