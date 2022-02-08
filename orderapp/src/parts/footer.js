@@ -7,15 +7,14 @@ import TelegramImg from '../assets/telegram.png';
 
 function Footer() {
   return (
-    <>
-      <div className="footer-container">
+    <div className="footer-container">
+        <hr/>
         <img id="fb-img" src={FacebookImg} alt="facebook logo"/>
         <img id="instagram-img"src={InstagramImg}  alt="instagram logo"/>
         <img id="twitter-img"src={TwitterImg}  alt="twitter logo"/>
         <img id="telegram-img"src={TelegramImg}  alt="telegram logo"/>
-        <p className="copyright">&#169; 2022 GroupFour Inc.</p>
+        <p className="copyright">&#169; 2022 GroupFour Inc.<br/>Ambrosial was created using React</p>
       </div>
-    </>
   );
 }
   

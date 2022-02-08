@@ -47,7 +47,7 @@ function Membership(){
                     <br></br>
                     <form className='inputform' ref={form} onSubmit={handlesubmit}>
                         
-                        <input className='inputvalue' type="text" placeholder="Your Username" name="username" size="50" autofocus></input>
+                        <input className='inputvalue' type="text" placeholder="Your Username" name="username" size="50" autoFocus></input>
                         
                         <input className='inputvalue' type="password" placeholder="Your Password" name="password" size="50"></input>
                         <input className='inputvalue' type="text" placeholder="Your Firstname" name="firstname" size="50"></input>

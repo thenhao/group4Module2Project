@@ -42,6 +42,16 @@ function Popup(props){
             </div>
         );
     }
+    else if(props.popupType === 'orderbill-popup'){
+        return(
+            <div className="orderbill-popup-box">
+                <div className="orderbill-box">
+                    <span className="orderbill-close-icon" onClick={props.handleClose}>x</span>
+                        {props.content}
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Popup;

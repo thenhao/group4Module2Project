@@ -7,7 +7,7 @@
     font-family: "Vibur",cursive;
     font-size: 45px;
     color: yellow;
-    animation:blinkingText 2s infinite;
+    animation:blinkingText 1s infinite;
 }
 
 @keyframes blinkingText{
@@ -28,14 +28,34 @@
     color: white;
 }
 
-.image-banner {
+.image-banner-1, .image-banner-2, .image-banner-3 {
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
     width: 450px;
     height: 450px;
+    margin-bottom: 20px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+#brownie-banner, #steak-banner, #mojito-banner{
+    width: 800px;
+    height: auto;
+}
+
+#brownie-banner {
+    margin-left: -190px;
+    margin-top: -170px;
+}
+
+#mojito-banner {
+    margin-left: -35px;
+    margin-top: -20px
+}
+
+#steak-banner {
+    margin-left: -200px;
+    margin-top: -60px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -98,5 +118,3 @@
 @media only screen and (min-width: 1200px) {
 
 }
-
-
