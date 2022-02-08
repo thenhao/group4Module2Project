@@ -1,5 +1,5 @@
 import React from 'react'
-import ConfirmedOrder from './ConfirmSendBtn';
+//import ConfirmedOrder from './ConfirmSendBtn';
 import CartItems from './CartItems';
 import Invoice from './Invoice.js'
 import './OrderlistPopUp.css';
@@ -40,7 +40,7 @@ function OrderlistPopUp(props) {
         <div className='button-container'>
             {/* Two inner button within the pop-up to 1.Amend (close the page) 2.Send the Order through */}
             {/* <button className="amend-btn" onClick={() => props.setSendOrderPopup(false)}>Amend Order</button> */}
-            <ConfirmedOrder className="confirm-send-btn"/>
+            {/*<ConfirmedOrder className="confirm-send-btn"/>*/}
             {/* <button className="confirm-send-btn" onSubmit={sendEmail}>Confirm Send</button> */}
         </div>
     </>);
