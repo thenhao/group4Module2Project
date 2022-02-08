@@ -1,13 +1,16 @@
 .promotion {
     text-align: center;
+    margin-top: 50px;
 }
 
 .promotion-header {
     text-align: center;
     font-family: "Vibur",cursive;
-    font-size: 45px;
+    font-size: 60px;
     color: yellow;
-    animation:blinkingText 2s infinite;
+    position: relative;
+    left: 0;
+    top: 30px;
 }
 
 @keyframes blinkingText{
@@ -32,10 +35,19 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 450px;
-    height: 450px;
+    position: relative;
+    top:-40px;
+    left: 0;
+    animation:blinkingText 2s infinite;
+}
+
+.image-banner img {
     border-radius: 50%;
-    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    left: -5%;
 }
 
 /* Extra small devices (phones, 600px and down) */

@@ -18,7 +18,7 @@ export default function Home() {
             <div className='image-banner'>
               <img id='mojito-banner'src="https://images.pexels.com/photos/4784/alcohol-bar-party-cocktail.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               alt="promotion"
-              height="450"/>
+              height="500"/>
             </div>
           </div> 
         </div>
@@ -32,7 +32,7 @@ export default function Home() {
             <div className='image-banner'>
               <img id='steak-banner'src="https://253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Steak_Frites_V10-700x461.jpg"
               alt="promotion"
-              height="450"/>
+              height="500"/>
             </div>
           </div> 
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
             <div className='image-banner'>
               <img id='brownie-banner'src="https://img.buzzfeed.com/video-api-prod/assets/fafe8090b4f3434f80c33b6e4ce40e24/BFV21539_BestFudgyBrownies-ThumbB1080.jpg"
               alt="promotion"
-              height="450"/>
+              height="500"/>
             </div>
           </div> 
         </div>
