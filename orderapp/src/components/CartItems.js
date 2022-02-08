@@ -1,5 +1,6 @@
 import React from 'react';
 import './CartItems.css';
+import Invoice from './Invoice';
 
 function CartItems(props) {
 
@@ -45,6 +46,7 @@ function CartItems(props) {
     return(
       <div>
         <h2>- ORDERS - </h2>
+        <Invoice />
         <p className="empty-list">Nothing has been ordered.</p>
       </div>
     );

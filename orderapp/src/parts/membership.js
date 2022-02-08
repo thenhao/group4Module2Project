@@ -32,10 +32,7 @@ function Membership(){
     
     return <div>
 
-        <img className='imageicon' src={signupicon} 
-            alt="sign up icon" 
-            style={{height: 35, width: 35}}
-            onClick={togglePopup} />
+        <button className="join" onClick={togglePopup}>Join Membership</button>
         
         {isOpen && <Popup
         popupType='member-popup'
