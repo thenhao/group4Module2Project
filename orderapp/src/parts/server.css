@@ -41,21 +41,17 @@ img:hover {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .server {
+        height: 15px;
+        width: 20px;
+        right: 90px;
+    }
 
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+    .server-content {
+        padding: 20px;
+        font-size: 14px;
+        width: auto;
+        height: auto;
+    }
 }

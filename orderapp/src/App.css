@@ -154,8 +154,9 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .background-opacity{
-        background-color: rgba(0 ,0 ,0 ,0.8);
         margin-top: -50px;
+        width: 100vw;
+        overflow-x: hidden;
     }
 
     .toggleMenu {
@@ -192,21 +193,92 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .background-opacity{
+        width: 100vw;
+        overflow-x: hidden;
+    }
 
+    .toggleMenu {
+        display: flex;
+        margin-top: 20px;
+        right: 47vw;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+        margin: -20px 0 0 0;
+        transition: 350ms;
+    }
+
+    .navbar.active{
+        display: flex;
+        transition: 350ms;
+    }
+
+    .pages,
+    .selected-page {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .navbar span {
+        text-align:center;
+    }
+
+    .menuitemcontainer {
+        margin-top: -20px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .background-opacity{
+        width: 100vw;
+        overflow-x: hidden;
+    }
 
+    .toggleMenu {
+        display: flex;
+        margin-top: 20px;
+        right: 47vw;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+        margin: -20px 0 0 0;
+        transition: 350ms;
+    }
+
+    .navbar.active{
+        display: flex;
+        transition: 350ms;
+    }
+
+    .pages,
+    .selected-page {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .navbar span {
+        text-align:center;
+    }
+
+    .menuitemcontainer {
+        margin-top: -20px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+    .toggleMenu {
+        display: none;
+    }
 }
