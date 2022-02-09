@@ -1,9 +1,5 @@
 import React from 'react';
 import './footer.css';
-import FacebookImg from '../assets/facebook.png';
-import InstagramImg from '../assets/instagram.png';
-import TwitterImg from '../assets/twitter.png';
-import TelegramImg from '../assets/telegram.png';
 
 function Footer() {
   return (

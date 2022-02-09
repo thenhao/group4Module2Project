@@ -37,7 +37,7 @@ img:hover {
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 600px) {
     .payment {
         right: 10px;
     }

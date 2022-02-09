@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Popup from '../components/popup/popup';
 import "./membership.css";
-import signupicon from '../assets/sign-up.png';
 
 function Membership(){
     const form = useRef();

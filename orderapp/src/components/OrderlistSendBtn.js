@@ -19,7 +19,6 @@ function OrderlistSendBtn ({selectedItemList, setTotalBilling, TotalBilling}) {
     // const [invoicenum, setinvoicenum] = useState(0);
     // Code ${invoicenum} to be insert in createEmailItem under htmlString
 
-
      function createEmailItems() {
       let htmlString = `<table width="500" cellspacing="2" border="1"><tr><th>Item</th><th>Quantity</th><th>Price</th></tr><tfoot><tr><td colspan="2">Total Bill (inclusive of 7% GST): </td><td colspan="1" align="right">$ ${TotalBilling}</td></tr></tfoot>`;
 
@@ -73,5 +72,4 @@ function OrderlistSendBtn ({selectedItemList, setTotalBilling, TotalBilling}) {
     )
   }  
 }
-
 export default OrderlistSendBtn;
