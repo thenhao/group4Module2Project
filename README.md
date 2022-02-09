@@ -23,8 +23,8 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 [Shaun Boey](https://github.com/shaunboey)
 
 ## Built with
-* HTML
 * CSS
+* Media Query
 * JavaScript
 * React
 * React Router Dom
@@ -45,6 +45,10 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 
 ![https://i.ibb.co/0YsnnFv/Untitled.jpg](https://i.ibb.co/0YsnnFv/Untitled.jpg)
 
+### Final product
+
+![https://github.com/thenhao/group4Module2Project/blob/9f5dcc851443d336a67463806a3601fe824949a0/ambrosial.jpg](https://github.com/thenhao/group4Module2Project/blob/9f5dcc851443d336a67463806a3601fe824949a0/ambrosial.jpg)
+
 ## Getting Started
 
 ### Usage
@@ -52,6 +56,8 @@ This is a group project for the SkillsUnion/NTU Software Developer Immersive cou
 You can:
 
 * View the restaurant menu by scanning a QR code.
+* You can view a carousel of ongoing promotion.
+* You can view the menu items categorized into "appetizer" ,"main", "beverage", and "dessert"
 * Choose the quantity of an item before adding the item.
 * Add the item to the order list.
 * Change the quantity of your items on the order list.
@@ -60,7 +66,6 @@ You can:
 * Call the server by clicking the bell icon.
 * Request for the bill by clicking the payment icon.
 * You can join membership by clicking the membership icon.
-* You can view a carousel of ongoing promotion.
 
 ## Acknowledgement
 * SkillsUnion
